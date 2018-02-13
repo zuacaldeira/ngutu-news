@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.github.zuacaldeira</groupId>
-    <artifactId>ngutu-org-website</artifactId>
+    <artifactId>ngutu-news</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>ngutu-org-website</name>
+    <name>ngutu-news</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.github.zuacaldeira</groupId>
             <artifactId>flex-app-backend</artifactId>
-            <version>1.1.35-SNAPSHOT</version>
+            <version>1.1.34</version>
         </dependency>
     </dependencies>
 
