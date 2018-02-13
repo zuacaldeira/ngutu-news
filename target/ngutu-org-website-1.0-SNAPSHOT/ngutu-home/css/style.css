@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+/*
+:root {
+    --color-nav: rgba(255, 250, 255, 0.95);
+    --color-orange: rgba(255,125,0,.6);
+    --color-black: rgba(0,0,0,.7);
+    --color-white: rgba(255, 250, 255, 0.6);
+    --color-red: rgba(255,0,0,.6);
+    --color-blue: rgba(0,0,100,.6);
+    --color-logo: red;
+    --color-article: var(--color-black);
+    --logo-ff: 'Dosis', 'Arial', sans-serif;
+}
+*/
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    font-family: 'Dosis';
+    font-size: 14px;
+    letter-spacing: .05em;
+}
+
+.clearer
+{
+    clear: both;
+}
+
+.clearfix:after
+{
+    content: '.';
+    overflow: hidden;
+    height: 0;
+    clear: both;
+    display: block;
+}
+
+#wrapper {
+    margin: 2.5% 5%;
+    height: 95%;
+    background: rgba(10,0,10,.3);
+    border-radius: 1%;
+}
+
+header {
+    height: 5vh;
+    background-image: url(https://source.unsplash.com/random?carnival);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header #logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: .21em solid red;
+    float: left;
+    padding: 0 .21em;
+    margin-top: 0;
+}
+
+
+/* NAVI */
+nav,
+footer nav {
+    height: 5vh;
+    background: rgba(0,0,0,.6);
+}
+
+nav.top
+{
+    position: relative;
+    margin: 0 auto;
+}
+
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    height: 5vh;
+    line-height: 5vh;
+    padding-left: 1vw;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: .5em;
+    padding-left: .5em;
+    text-align: center;
+}
+
+
+nav ul li:last-child
+{
+    border-right: none;    
+}
+
+nav ul li a,
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a:visited {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    word-spacing: .15em;
+    font-size: 1.2em;
+    color: red;
+}
+
+
+nav ul li a:hover,
+nav ul li.active a
+{
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li.active
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 1em;    
+}
+
+.logo {
+    border: .2em solid red;
+}
+
+/* MAIN CONTENT */
+
+main {
+    height: 90vh;
+    width: calc(100%-1em);
+    text-align: center;
+    overflow: scroll;
+}
+
+/* An article */
+article
+{
+    width: 100%;
+    min-height: 75vh;
+    background: none;
+    color: white;
+    align-content: center;
+}
+
+article:hover {
+    background: rgba(0,0,0,.7);
+}
+
+article:nth-child(even):hover {
+    background: rgba(30,0,0,.7);
+    color: white;
+}
+
+article:nth-child(odd):hover {
+    background: rgba(0,30,0,.7);
+    color: white;
+}
+
+
+h1, h2, h3, p {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 2em 0 1em 0;
+}
+
+h2 {
+    font-size: 2.25em;
+    padding: 1.5em 0 1em 0;
+}
+
+h3 {
+    font-size: 1.5em;    
+}
+
+p {
+    font-size: .5em;    
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:hover {
+    color: red;
+}
+
+
+article .info {
+    overflow: hidden;
+}
+
+article p {
+    width: 80%;
+    margin: 0 10%;    
+    font-size: 1.2em;
+    padding: 0.5em 0 0.5em 0;
+    text-align: left;
+}
+
+.contact-form
+{
+}
+
+.contact-map
+{
+    background: black;
+    color: white;
+}
+
+.articles {
+    width: 80%;
+    margin: 0 10%;    
+    display: inline-block;
+}
+
+figure.count-circle {
+    width: 5em;
+    height: 5em;
+    box-shadow: 0 0 5px #fff;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    border-radius: 25%;
+    margin: .2em;
+}
+
+figure.count-circle:hover {
+    transform: scale(1.6);
+    background-color: rgba(0,0,0,.5);
+}
+
+figure.count-circle p {
+    text-align: center;
+    margin: 1em auto;
+    font-size: 2em;
+}
+
+figure.count-circle:hover p {
+    font-size: 75%;
+}
+
+figure.count-circle figcaption {
+    border-top: 2px solid white;
+    font-size: 1.1em;
+}
+
+#latest-news figure.count-circle {
+    border-radius: 10%; 
+}
+
+
+/* Search Form */
+#search-fieldset {
+    border: none;
+}
+
+#search-form {
+    margin: 0 auto;
+}
+
+#search-form input {
+    height: 2em;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    background: rgba(255,255,255,.2);
+    border-color: rgba(255,255,255,.2);
+    font-family: 'Dosis';
+}
+
+
+
+
+/* FOOTER */
