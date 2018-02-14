@@ -20,7 +20,7 @@
                 <!-- TOP NAVIGATION  -->
                 <nav class="top">
                     <ul>
-                        <li id="logo" class="logo"><a href="www.ngutu.org">ngutu.org</a></li>
+                        <li id="logo" class="logo"><a href="http://www.ngutu.org">ngutu.org</a></li>
                         <li class="active"><a href="index.jsp">Home</a></li>
                         <li><a href="latest.jsp">Latest</a></li>
                         <li><a href="categories.jsp">Categories</a></li>
