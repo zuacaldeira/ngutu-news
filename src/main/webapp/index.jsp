@@ -38,12 +38,12 @@
             <!-- MAIN CONTENT -->
             <main>
                 <article class="top clearfix">
-                    <h1><a href="http://news.ngutu.org">NGUTU NEWS</a></h1>
                     <p>
                         <strong>NGUTU NEWS</strong> bring news around the World, 
                         enlarging awareness of global trends and challenges, in 
                         an effective and productive way
                     </p>
+                    <h2>
                     <section class="articles">
                         <figure id="articles-count" class="count-circle">
                             <p><% out.println(new StatsService().countAllArticles()); %></p>
@@ -66,6 +66,7 @@
                             <figcaption>Languages</figcaption>
                         </figure>
                     </section>
+</h2>                            
                 </article>
             </main>
 

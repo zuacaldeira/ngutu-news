@@ -71,10 +71,10 @@ h1 a:hover {
 
 header {
     height: 50vh;
-    background-image: url(https://source.unsplash.com/random?earth);
+    background-image: url(https://source.unsplash.com/random?war);
     background-repeat:  no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center center;    
 }
 
 header .logo {
@@ -189,7 +189,7 @@ header #search-form input {
 /* MAIN CONTENT */
 
 main {
-    height: 90vh;
+    min-height: 49vh;
     width: calc(100%-1em);
     text-align: center;
     overflow: scroll;
@@ -199,36 +199,16 @@ main {
 article
 {
     width: 100%;
-    min-height: 75vh;
-    background: none;
+    min-height: 50vh;
+    background: rgba(0,0,0,.79);
     color: white;
     align-content: center;
 }
 
-article:hover {
-    background: rgba(0,0,0,.5);
-}
 
-article:nth-child(even):hover {
-    background: rgba(30,0,0,.5);
-    color: white;
-}
-
-article:nth-child(odd):hover {
-    background: rgba(0,30,0,.5);
-    color: white;
-}
-
-
-
-
-article .info {
-    overflow: hidden;
-}
-
-article p {
-    width: 80%;
-    margin: 0 10%;    
+article > p {
+    width: 70%;
+    margin: 0 15%;    
     font-size: 1.2em;
     padding: 0.5em 0 0.5em 0;
     text-align: left;
@@ -245,20 +225,25 @@ article p {
 }
 
 .articles {
-    width: 80%;
-    margin: 0 10%;    
+    width: 70%;
+    margin: 0 15%;    
     display: inline-block;
 }
 
+.latest.articles {
+    width: 100%;
+    margin: .2em auto;    
+}
+
 figure.count-circle {
-    width: 5em;
+    width: 4.9em;
     height: 5em;
     box-shadow: 0 0 5px #fff;
     float: left;
     text-align: center;
     overflow: hidden;
     color: white;
-    border-radius: 25%;
+    border-radius: 5%;
     margin: .2em;
 }
 

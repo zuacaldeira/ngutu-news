@@ -27,22 +27,20 @@
                         <li><a href="pubishers.jsp">Publishers</a></li>
                         <li><a href="languages.jsp">Languages</a></li>
                         <li><a href="countries.jsp">Countries</a></li>
-                        <li><a href="contact.jsp">Contact</a></li>
-                        <li><a href="blog.jsp">Blog</a></li>
                         <li><a href="search.jsp">Search</a></li>
                     </ul>
                 </nav>
                 <h1>Latest News</h1>
-                <h2>The Power of Now</h2>
+                <h2>Know Now</h2>
             </header>
 
 
             <!-- MAIN CONTENT -->
             <main>
                 <article class="clearfix">
-                    <section class="articles">
+                    <section class="latest articles">
                         <%
-                            Iterable<NewsArticle> articles = new NewsArticleService().findLatest();
+                            Iterable<NewsArticle> articles = new NewsArticleService().findAll(0, 104);
                             for (NewsArticle art : articles) {
                                 if (art.getImageUrl() != null) {
                                     out.println("<figure class=\"count-circle\">");
