@@ -13,27 +13,23 @@
 <body>
 
     <div id="wrapper">
-        <!-- HEADER -->
-        <header id="header">
-            <!-- LOGO -->
-            <div id="logo">
-                ngutu.org
-            </div>
-        </header>
+            <!-- HEADER -->
+            <header class="clearfix">
+                <!-- TOP NAVIGATION  -->
+                <nav class="top">
+                    <ul>
+                        <li id="logo" class="logo"><a href="http://www.ngutu.org">ngutu.org</a></li>
+                        <li><a href="index.jsp">Home</a></li>
+                        <li><a href="latest.jsp">Latest</a></li>
+                        <li><a href="categories.jsp">Categories</a></li>
+                        <li><a href="publishers.jsp">Publishers</a></li>
+                        <li><a href="languages.jsp">Languages</a></li>
+                        <li><a href="countries.jsp">Countries</a></li>
+                        <li><a href="search.jsp">Search</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <!-- NAVIGATION -->
-        <nav class="top clearfix">
-            <ul>
-                <li><a href="index.jsp">home</a></li>
-                <li><a href="about-us.jsp">about us</a></li>
-                <li><a href="news.jsp">news</a></li>
-                <li><a href="diaspora.jsp">diaspora</a></li>
-                <li><a href="timeline.jsp">timeline</a></li>
-                <li><a href="affiliated.jsp">affiliated</a></li>
-                <li class="active"><a href="contact.jsp">contact</a></li>
-                <li><a href="blog.jsp">blog</a></li>
-            </ul>
-        </nav>
 
         <!-- CONTENT -->
         <main id="content">
@@ -90,6 +86,9 @@
                 <ul>
                     <li><a href="#">impressum</a></li>
                     <li><a href="#">privacy</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="contact.jsp">Contact</a></li>
+                        <li><a href="blog.jsp">Blog</a></li>
                 </ul>
             </nav>
         </footer>

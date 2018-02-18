@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.github.zuacaldeira</groupId>
-    <artifactId>ngutu-org-website</artifactId>
+    <artifactId>ngutu-news</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>ngutu-org-website</name>
+    <name>ngutu-news</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -24,8 +24,13 @@
         <dependency>
             <groupId>com.github.zuacaldeira</groupId>
             <artifactId>flex-app-backend</artifactId>
-            <version>1.1.35-SNAPSHOT</version>
+            <version>1.1.36</version>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-util</artifactId>
+            <version>9.4.8.v20171121</version>
+        </dependency>   
     </dependencies>
 
     <build>
@@ -53,9 +58,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.6</version>
+                <version>3.0.2</version>
                 <executions>
                     <execution>
+                        <id>javaee-endorsed-api</id>
                         <phase>validate</phase>
                         <goals>
                             <goal>copy</goal>
@@ -73,9 +79,33 @@
                             </artifactItems>
                         </configuration>
                     </execution>
+                     <execution>
+                         <id>web-runner</id>
+                         <phase>package</phase>
+                         <goals><goal>copy</goal></goals>
+                         <configuration>
+                             <artifactItems>
+                                 <artifactItem>
+                                     <groupId>com.github.jsimone</groupId>
+                                     <artifactId>webapp-runner</artifactId>
+                                     <version>8.5.27.0</version>
+                                     <destFileName>webapp-runner.jar</destFileName>
+                                 </artifactItem>
+                             </artifactItems>
+                         </configuration>
+                     </execution>
                 </executions>
+            </plugin>
+            <!-- The Jetty plugin allows us to easily test the development build by
+            running jetty:run on the command line. -->
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.8.v20171121</version>
+                <configuration>
+                    <scanIntervalSeconds>2</scanIntervalSeconds>
+                </configuration>
             </plugin>
         </plugins>
     </build>
-
 </project>
