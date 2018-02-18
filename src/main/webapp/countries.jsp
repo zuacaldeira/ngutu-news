@@ -1,3 +1,7 @@
+<%@page import="java.util.TreeSet"%>
+<%@page import="backend.utils.MyDateUtils"%>
+<%@page import="db.news.NewsSource"%>
+<%@page import="backend.services.news.NewsSourceService"%>
 <%@page import="db.news.NewsArticle"%>
 <%@page import="backend.services.news.NewsArticleService"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -8,8 +12,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/header-form.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/header-form.css">
     </head>
 
     <body>
@@ -17,25 +21,42 @@
         <div id="wrapper">
 
             <!-- HEADER -->
-            <header class="clearfix">
+            <header>
                 <!-- TOP NAVIGATION  -->
-                <nav class="top">
+                <nav class="top clearfix">
                     <ul>
-                        <li id="logo" class="logo"><a href="http://www.ngutu.org">ngutu.org</a></li>
+                        <li id="logo" class="logo"><a href="http://www.ngutu.org">n</a></li>
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="latest.jsp">Latest</a></li>
                         <li><a href="categories.jsp">Categories</a></li>
                         <li><a href="publishers.jsp">Publishers</a></li>
                         <li><a href="languages.jsp">Languages</a></li>
-                        <li><a href="countries.jsp">Countries</a></li>
-                        <li class="active"><a href="search.jsp">Search</a></li>
+                        <li class="active"><a href="countries.jsp">Countries</a></li>
+                        <li><a href="search.jsp">Search</a></li>
                     </ul>
                 </nav>
-                <h1>Search for News</h1>
-                <fieldset id="search-fieldset">
-                    <form id="search-form" name="search-form" method="get" action="search.jsp">
+                <h1>Search like a World Citizen!</h1>
+
+                <fieldset id="fieldset">
+                    <form id="form" name="country-form" method="get" action="countries.jsp">
                         <div>
-                            <input name="search" type="text" size="50" required>
+                            <%
+                            NewsSourceService service = new NewsSourceService();
+                            Iterable<String> countries = service.findCountries();
+                            TreeSet<String> sortedCountries = new TreeSet<String>();
+                            for(String country: countries) {
+                                if(country != null && MyDateUtils.getCountry(country) != null) {
+                                    sortedCountries.add(MyDateUtils.getCountry(country));
+                                }
+                            }
+                            out.println("<select name=\"country\" required>");
+                            out.println("<option>&nbsp;</option>");
+                            for(String sorted: sortedCountries) {
+                                out.println("<option>" + sorted + "</option>");
+                            }
+                            out.println("</select>");
+                            %>
+                            <input type="submit" value="Go!">
                         </div>
                     </form>
                 </fieldset>
@@ -48,11 +69,11 @@
                     <article>
                         <div class="figures clearfix">
                             <%
-                                out.println("<p>" + "looking for: " + request.getParameter("search") + "</p>");
-
-                                if (request.getParameter("search") != null) {
-                                    String searchTerm = (String) request.getParameter("search");
-                                    Iterable<NewsArticle> articles = new NewsArticleService().findArticlesWithText(searchTerm);
+                                String country = request.getParameter("country");
+                                if (country != null) {
+                                    country = MyDateUtils.getCountryCode(country);
+                                    out.println("Looking up for: " + country);
+                                    Iterable<NewsArticle> articles = new NewsArticleService().findArticlesWithCountry(country);
                                     for (NewsArticle art : articles) {
                                         if (art.getImageUrl() != null && !art.getImageUrl().isEmpty()) {
                                             out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
@@ -64,7 +85,7 @@
                                     }
                                     articles = null;
                                 }
-                            %>                        
+                            %>
                         </div>
                     </article>
                 </section>

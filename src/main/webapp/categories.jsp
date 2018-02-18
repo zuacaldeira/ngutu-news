@@ -1,3 +1,4 @@
+<%@page import="backend.services.news.NewsSourceService"%>
 <%@page import="db.news.NewsArticle"%>
 <%@page import="backend.services.news.NewsArticleService"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -9,6 +10,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/header-form.css">
     </head>
 
     <body>
@@ -20,18 +22,37 @@
                 <!-- TOP NAVIGATION  -->
                 <nav class="top clearfix">
                     <ul>
-                        <li id="logo" class="logo"><a href="http://www.ngutu.org">ngutu.org</a></li>
+                        <li id="logo" class="logo"><a href="http://www.ngutu.org">n</a></li>
                         <li><a href="index.jsp">Home</a></li>
-                        <li class="active"><a href="latest.jsp">Latest</a></li>
-                        <li><a href="categories.jsp">Categories</a></li>
+                        <li><a href="latest.jsp">Latest</a></li>
+                        <li class="active"><a href="categories.jsp">Categories</a></li>
                         <li><a href="publishers.jsp">Publishers</a></li>
                         <li><a href="languages.jsp">Languages</a></li>
                         <li><a href="countries.jsp">Countries</a></li>
                         <li><a href="search.jsp">Search</a></li>
                     </ul>
                 </nav>
-                <h1>Latest News</h1>
-                <h2>Know Now</h2>
+                <h1>Search for News by Tag</h1>
+                
+                <fieldset id="category-fieldset">
+                    <form id="category-form" name="category-form" method="get" action="categories.jsp">
+                        <div>
+                            <%
+                            out.println("<select name=\"category\" required>");
+                            out.println("<option>&nbsp;</option>");
+                            Iterable<String> categories = new NewsSourceService().findCategories();
+                            out.println("Found any category? " + categories.iterator().hasNext());
+                            for(String cat: categories) {
+                                if(cat != null) {
+                                    out.println("<option>" + cat + "</option>");
+                                }
+                            }
+                            out.println("</select>");
+                                %>
+                            <input type="submit" value="Go!">
+                        </div>
+                    </form>
+                </fieldset>
             </header>
 
 
@@ -40,27 +61,23 @@
                 <section class="latest articles">
                     <article>
                         <div class="figures clearfix">
-                            <%
-                                int max = 30;
-                                int delta = 5;
-                                Iterable<NewsArticle> articles = new NewsArticleService().findAll(0, max+delta);
-                                int i = 0;
+                        <%
+                            String category = request.getParameter("category");
+                            if (category != null) {
+                                Iterable<NewsArticle> articles = new NewsArticleService().findArticlesTaggedAs(category);
                                 for (NewsArticle art : articles) {
-                                    if(i >= max) {
-                                        break;
-                                    }
                                     if (art.getImageUrl() != null && !art.getImageUrl().isEmpty()) {
                                         out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
                                         out.println("   <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
                                         out.println("       <figcaption>" + art.getTitle() + "</figcaption>");
                                         out.println("   </figure>");
                                         out.println("</a>");
-                                        i++;
                                     }
                                 }
                                 articles = null;
-                            %>
-                        </div>                        
+                            }
+                        %>
+                        </div>
                     </article>
                 </section>
             </main>

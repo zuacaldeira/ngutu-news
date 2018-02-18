@@ -1,3 +1,5 @@
+<%@page import="db.news.NewsSource"%>
+<%@page import="backend.services.news.NewsSourceService"%>
 <%@page import="db.news.NewsArticle"%>
 <%@page import="backend.services.news.NewsArticleService"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -8,8 +10,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/header-form.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/header-form.css">
     </head>
 
     <body>
@@ -17,25 +19,39 @@
         <div id="wrapper">
 
             <!-- HEADER -->
-            <header class="clearfix">
+            <header>
                 <!-- TOP NAVIGATION  -->
-                <nav class="top">
+                <nav class="top clearfix">
                     <ul>
-                        <li id="logo" class="logo"><a href="http://www.ngutu.org">ngutu.org</a></li>
+                        <li id="logo" class="logo"><a href="http://www.ngutu.org">n</a></li>
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="latest.jsp">Latest</a></li>
                         <li><a href="categories.jsp">Categories</a></li>
-                        <li><a href="publishers.jsp">Publishers</a></li>
+                        <li class="active"><a href="publishers.jsp">Publishers</a></li>
                         <li><a href="languages.jsp">Languages</a></li>
                         <li><a href="countries.jsp">Countries</a></li>
-                        <li class="active"><a href="search.jsp">Search</a></li>
+                        <li><a href="search.jsp">Search</a></li>
                     </ul>
                 </nav>
-                <h1>Search for News</h1>
-                <fieldset id="search-fieldset">
-                    <form id="search-form" name="search-form" method="get" action="search.jsp">
+                <h1>Search for News from Publisher</h1>
+
+                <fieldset id="category-fieldset">
+                    <form id="category-form" name="category-form" method="get" action="publishers.jsp">
                         <div>
-                            <input name="search" type="text" size="50" required>
+                            <%
+                            out.println("<select name=\"publisher\" required>");
+                            out.println("<option>&nbsp;</option>");
+                            NewsSourceService service = new NewsSourceService();
+                            Iterable<String> publishers = service.findNames();
+                            out.println("Found any category? " + publishers.iterator().hasNext());
+                            for(String pub: publishers) {
+                                if(pub != null) {
+                                    out.println("<option>" + pub + "</option>");
+                                }
+                            }
+                            out.println("</select>");
+                            %>
+                            <input type="submit" value="Go!">
                         </div>
                     </form>
                 </fieldset>
@@ -48,11 +64,10 @@
                     <article>
                         <div class="figures clearfix">
                             <%
-                                out.println("<p>" + "looking for: " + request.getParameter("search") + "</p>");
-
-                                if (request.getParameter("search") != null) {
-                                    String searchTerm = (String) request.getParameter("search");
-                                    Iterable<NewsArticle> articles = new NewsArticleService().findArticlesWithText(searchTerm);
+                                String name = request.getParameter("publisher");
+                                out.println("Looking up for: " + name);
+                                if (name != null) {
+                                    Iterable<NewsArticle> articles = new NewsArticleService().findArticlesPublishedBy(name);
                                     for (NewsArticle art : articles) {
                                         if (art.getImageUrl() != null && !art.getImageUrl().isEmpty()) {
                                             out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
@@ -64,7 +79,7 @@
                                     }
                                     articles = null;
                                 }
-                            %>                        
+                            %>
                         </div>
                     </article>
                 </section>

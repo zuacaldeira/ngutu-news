@@ -7,26 +7,25 @@
 
 body {
     font-family: 'Dosis';
-    font-size: 14px;
-    letter-spacing: .05em;
+    font-size: 16px;
+    letter-spacing: .1em;
     color: black;
     background: rgba(255,255,255,.9);
 }
 
-h1, h2, h3, p {
+h1, h2, h3 {
     width: 100%;
-    color: white;
     text-align: center;
 }
 
 h1 {
     font-size: 3em;
-    padding: 2em 0 1em 0;
+    padding: 2em 0;
 }
 
 h2 {
     font-size: 2em;
-    padding: 1.5em 0 1em 0;
+    padding: 1.5em 0;
 }
 
 h3 {
@@ -62,32 +61,14 @@ h1 a:hover {
 
 
 
-#wrapper {
-    margin: 0 auto;
-    height: 100%;
-    background: rgba(10,0,10,.3);
-    border-radius: 1%;
-}
-
 header {
-    height: 50vh;
-    background-image: url(https://source.unsplash.com/random?war);
+    height: 100vh;
+    background-image: url(https://source.unsplash.com/random);
     background-repeat:  no-repeat;
     background-size: cover;
-    background-position: center center;    
+    background-position: center center;
+    background-attachment: fixed;
 }
-
-header .logo {
-    font-size: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    border: .12em solid red;
-    float: left;
-    padding: 0 .21em;
-    margin-top: 0;
-}
-
 
 /* NAVI */
 header nav.top
@@ -98,7 +79,6 @@ header nav.top
     position: fixed;
     text-align: center;
 }
-
 
 nav ul {
     list-style: none;
@@ -152,9 +132,25 @@ nav ul li.active
     padding-bottom: 1em;    
 }
 
+nav.top .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 .21em;
+    margin-top: 0;
+    float: left;
+    animation: color 5s;
+}
+
+nav.top .logo:hover {
+    color: white;
+}
+
+
+
 /* title pane */
 header h1 {
-    padding-top: 15%;
+    padding-top: 25%;
     padding-bottom: 0%;
     text-shadow: -2px 2px 1px #aaa;
 }
@@ -166,52 +162,68 @@ header h2 {
     font-style: italic;
 }
 
-header #search-fieldset {
-    border: none;
-}
-
-header #search-form {
-}
-
-header #search-form input {
-    width: 50%;
-    height: 2em;
-    margin: 1% 25%;
-    font-family: 'Dosis';
-    font-size: 1.5em;
-    text-align: center;
-    color: white;
-    background: transparent;
-    border-color: rgba(255,255,255,.5);
-}
 
 
 /* MAIN CONTENT */
 
 main {
-    min-height: 49vh;
-    width: calc(100%-1em);
+    width: 100%;
     text-align: center;
-    overflow: scroll;
+}
+
+/* A section inside the main contaner */
+main section {
+    width: 100%;
 }
 
 /* An article */
-article
+main section article
 {
     width: 100%;
-    min-height: 50vh;
-    background: rgba(0,0,0,.79);
-    color: white;
-    align-content: center;
+    padding: 0;
+    background: black;
+}
+
+main section article.top
+{
+    height: 100vh;
 }
 
 
-article > p {
-    width: 70%;
-    margin: 0 15%;    
+
+
+main section article > p {
+    width: 90%;
     font-size: 1.2em;
-    padding: 0.5em 0 0.5em 0;
+    padding: 5%;
     text-align: left;
+    color: white;
+}
+
+main section article .figures {
+    width: 50%;
+    padding: 5% 25%;
+    color: white;    
+}
+
+.latest .figures {
+    width: 100%;
+    padding: 0% 0%;
+}
+
+main section article .figures figure {
+    width: 18.8%;
+    margin: .1%;
+}
+
+.latest .figures figure {
+    width: 9.8%;
+    margin: .1%;
+}
+
+main section article .figures figure > p {
+    width: 40%;
+    padding: 5% 30%;
 }
 
 .contact-form
@@ -224,51 +236,50 @@ article > p {
     color: white;
 }
 
-.articles {
-    width: 70%;
-    margin: 0 15%;    
-    display: inline-block;
-}
-
-.latest.articles {
-    width: 100%;
-    margin: .2em auto;    
-}
-
 figure.count-circle {
-    width: 4.9em;
+    width: 5em;
     height: 5em;
     box-shadow: 0 0 5px #fff;
     float: left;
-    text-align: center;
-    overflow: hidden;
-    color: white;
     border-radius: 5%;
     margin: .2em;
+    color: white;
 }
-
 figure.count-circle:hover {
-    transform: scale(1.6);
-    background-color: rgba(0,0,0,.5);
+    transform: scale(1.7);
+    font-size: 1em;
 }
 
-figure.count-circle p {
+figure p {
     text-align: center;
-    margin: 1em auto;
-    font-size: 2em;
+    margin: .5em auto;
+    font-size: 1em;
+    color: white;
+}
+
+
+.latest figure.count-circle p {
+    overflow: hidden;
+    display: none;
 }
 
 figure.count-circle:hover p {
-    font-size: 75%;
 }
 
-figure.count-circle figcaption {
+.latest figure.count-circle figcaption {
     border-top: 2px solid white;
-    font-size: 1.1em;
+    font-size: .7em;
+    visibility: hidden;
+}
+
+.latest figure.count-circle:hover figcaption {
+    visibility: visible;
+    text-align: left;
+    background: rgba(0,0,0,.6);
 }
 
 #latest-news figure.count-circle {
-    border-radius: 10%; 
+    border-radius: 5%; 
 }
 
 
@@ -279,6 +290,6 @@ figure.count-circle figcaption {
 /* FOOTER */
 footer nav {
     height: 5vh;
-    background: rgba(0,0,0,.6);
+    background: rgba(0,0,0,.7);
 }
 

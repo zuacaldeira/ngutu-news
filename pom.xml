@@ -24,8 +24,13 @@
         <dependency>
             <groupId>com.github.zuacaldeira</groupId>
             <artifactId>flex-app-backend</artifactId>
-            <version>1.1.35</version>
+            <version>1.1.36-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-util</artifactId>
+            <version>9.4.8.v20171121</version>
+        </dependency>   
     </dependencies>
 
     <build>
@@ -90,6 +95,16 @@
                          </configuration>
                      </execution>
                 </executions>
+            </plugin>
+            <!-- The Jetty plugin allows us to easily test the development build by
+            running jetty:run on the command line. -->
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.4.8.v20171121</version>
+                <configuration>
+                    <scanIntervalSeconds>2</scanIntervalSeconds>
+                </configuration>
             </plugin>
         </plugins>
     </build>

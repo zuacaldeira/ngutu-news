@@ -22,7 +22,7 @@
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="latest.jsp">Latest</a></li>
                         <li><a href="categories.jsp">Categories</a></li>
-                        <li><a href="pubishers.jsp">Publishers</a></li>
+                        <li><a href="publishers.jsp">Publishers</a></li>
                         <li><a href="languages.jsp">Languages</a></li>
                         <li><a href="countries.jsp">Countries</a></li>
                         <li><a href="search.jsp">Search</a></li>
