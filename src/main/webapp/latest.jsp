@@ -20,7 +20,6 @@
                 <!-- TOP NAVIGATION  -->
                 <nav class="top clearfix">
                     <ul>
-                        <li id="logo" class="logo"><a href="http://www.ngutu.org">ngutu.org</a></li>
                         <li><a href="index.jsp">Home</a></li>
                         <li class="active"><a href="latest.jsp">Latest</a></li>
                         <li><a href="categories.jsp">Categories</a></li>
@@ -37,8 +36,8 @@
 
             <!-- MAIN CONTENT -->
             <main>
-                <section class="latest articles">
-                    <article>
+                <section class="articles">
+                    <article class="latest">
                         <div class="figures clearfix">
                             <%
                                 int max = 30;

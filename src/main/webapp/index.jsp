@@ -17,7 +17,6 @@
             <!-- TOP NAVIGATION  -->
             <nav class="top">
                 <ul>
-                    <li class="logo"><a href="http://www.ngutu.org">n</a></li>
                     <li class="active"><a href="index.jsp">Home</a></li>
                     <li><a href="latest.jsp">Latest</a></li>
                     <li><a href="categories.jsp">Categories</a></li>

@@ -71,28 +71,25 @@ header {
 }
 
 /* NAVI */
-header nav.top
-{
-    width: 100%;
-    height: 7vh;
-    background: rgba(0,0,0,.8);
+nav.top {
     position: fixed;
+    width: auto;
+    height: auto;
+    background: rgba(0,0,0,.8);
     text-align: center;
 }
 
 nav ul {
+    width: auto;
+    height: auto;
     list-style: none;
-    overflow: hidden;
-    height: 5vh;
-    line-height: 5vh;
-    padding-left: 1vw;
+    padding: 1em;
 }
 
 nav ul li {
     display: inline;
-    padding-right: .5em;
-    padding-left: .5em;
     text-align: center;
+    width: 10%;
 }
 
 
@@ -120,30 +117,26 @@ nav ul li a:hover,
 nav ul li.active a
 {
     color: white;
-    font-weight: bold;
 }
 
 nav ul li.active
 {
-    font-size: 1.5em;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    padding-bottom: 1em;    
 }
 
-nav.top .logo {
+nav ul li.logo {
+    width: 2em;
+    height: 2em;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
-    padding: 0 .21em;
+    color: yellow;
     margin-top: 0;
-    float: left;
-    animation: color 5s;
 }
 
-nav.top .logo:hover {
-    color: white;
+nav ul li.logo:hover {
+    color: blue;
 }
 
 
@@ -179,8 +172,8 @@ main section {
 /* An article */
 main section article
 {
-    width: 100%;
-    padding: 0;
+    width: 96%;
+    padding: 2%;
     background: black;
 }
 
@@ -188,9 +181,6 @@ main section article.top
 {
     height: 100vh;
 }
-
-
-
 
 main section article > p {
     width: 90%;
@@ -200,25 +190,14 @@ main section article > p {
     color: white;
 }
 
-main section article .figures {
-    width: 50%;
-    padding: 5% 25%;
-    color: white;    
-}
-
-.latest .figures {
-    width: 100%;
-    padding: 0% 0%;
+.figures {
+    width: 90%;
+    margin: 0 5%;
 }
 
 main section article .figures figure {
-    width: 18.8%;
-    margin: .1%;
-}
-
-.latest .figures figure {
-    width: 9.8%;
-    margin: .1%;
+    width: 19%;
+    margin: .5%
 }
 
 main section article .figures figure > p {
@@ -244,11 +223,20 @@ figure.count-circle {
     border-radius: 5%;
     margin: .2em;
     color: white;
+    transition: cubic-bezier, transform ease-in-out 1s;
+    -webkit-transition: cubic-bezier, transform ease-in-out 1s;
 }
-figure.count-circle:hover {
-    transform: scale(1.7);
-    font-size: 1em;
+
+figure.count-circle:hover,
+figure.count-circle:focus {
+    transform: scale(2);
 }
+
+.latest figure.count-circle:hover figcaption {
+    font-size: .5em;
+    padding: .5em 5% 0 5%;
+}
+
 
 figure p {
     text-align: center;
@@ -275,11 +263,11 @@ figure.count-circle:hover p {
 .latest figure.count-circle:hover figcaption {
     visibility: visible;
     text-align: left;
-    background: rgba(0,0,0,.6);
+    background: rgba(255,0,0,.1);
 }
 
-#latest-news figure.count-circle {
-    border-radius: 5%; 
+figure.count-circle {
+    border-radius: 1%; 
 }
 
 
@@ -289,7 +277,7 @@ figure.count-circle:hover p {
 
 /* FOOTER */
 footer nav {
-    height: 5vh;
+    height: auto;
     background: rgba(0,0,0,.7);
 }
 

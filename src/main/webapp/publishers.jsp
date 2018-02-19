@@ -23,7 +23,6 @@
                 <!-- TOP NAVIGATION  -->
                 <nav class="top clearfix">
                     <ul>
-                        <li id="logo" class="logo"><a href="http://www.ngutu.org">n</a></li>
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="latest.jsp">Latest</a></li>
                         <li><a href="categories.jsp">Categories</a></li>
