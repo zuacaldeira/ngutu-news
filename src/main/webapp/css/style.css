@@ -147,6 +147,20 @@ main article {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;    
+    overflow: scroll;
+}
+
+
+/* The top section */
+main article section.top {
+    height: 50vh;
+}
+
+/* An article */
+main article section.detail
+{
+    min-height: 50vh;
+    background-color: rgba(0,0,0,.5);
 }
 
 main article h1 {
@@ -177,47 +191,33 @@ main article #stats {
     margin: 0 auto;
 }
 
-/* The top section */
-main article section.top {
-    height: 50vh;
-}
-
-/* An article */
-main article section.detail
-{
-    min-height: 50vh;
-    background-color: rgba(0,0,0,.3);
-    animation-name: headline-animation;
-    animation-duration: .5s;
-    animation-delay: 0s;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-}
-
-main section article h1 {
-    width: 100%;
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-    padding: 3em 0;
-}
-
-
-
-.figures {
+main article .summaries {
     width: 90%;
-    margin: 0 5%;
+    margin: 1em 5%;
 }
 
-main section article .figures figure {
-    width: 19%;
-    margin: .5%
+main article .summaries .summary {
+    display: inline;
 }
 
-main section article .figures figure > p {
-    width: 40%;
-    padding: 5% 30%;
+main article .summaries .summary figure {
+    width: 19.0%;
+    margin: .5%;
 }
+
+
+main article .summaries .summary figure figcaption {
+    font-size: .5em;
+    text-align: left;
+}
+
+main article .summaries .summary figure figcaption:hover {
+    font-size: .7em;
+    background: rgba(255,0,0,.5);
+}
+
+
+
 
 .contact-form
 {
