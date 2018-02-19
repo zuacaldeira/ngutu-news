@@ -1,24 +1,23 @@
 * {
     
 }
-header h1 {
-    padding-top: 5em;
-}
-header fieldset {
+
+article section.top fieldset {
     border: none;
-}
-
-header fieldset form {
-    height: 5em;
-    width: 50em;
-    margin: 0 auto;    
-}
-
-header fieldset form div {
+    width: 50%;
     margin: 0 auto;
 }
 
-header fieldset select{
+article section.top fieldset form {
+    height: 5em;
+    margin: 0 auto;    
+}
+
+article section fieldset form div {
+    margin: 0 auto;
+}
+
+article section fieldset select{
     background: transparent;
     color: white;
     width: 70%;
@@ -27,7 +26,7 @@ header fieldset select{
     height: 3em;
 }
 
-header fieldset form input {
+article section fieldset form input {
     width: 100%;    
     font-size: 1.25em;
     height: 3em;
@@ -37,11 +36,11 @@ header fieldset form input {
     border-color: red;
 }
 
-header fieldset form input[type="submit"] {
+article section fieldset form input[type="submit"] {
     width: 25%;    
     background: red;
 }
 
-header fieldset form option {
+article section fieldset form option {
     font-size: 2em;
 }

@@ -43,8 +43,9 @@
                         <h1>Latest News</h1>
                         <h2>Know Now</h2>
                     </section>
+                    
                     <section class="detail">
-                        <div class="summaries  clearfix">
+                        <div class="summaries clearfix">
                             <%
                                 int max = 30;
                                 int delta = 5;
