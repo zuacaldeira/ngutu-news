@@ -10,8 +10,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <link rel="stylesheet" type="text/css" href="css/header-form.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
     </head>
 
     <body>
@@ -32,56 +32,59 @@
                         <li><a href="search.jsp">Search</a></li>
                     </ul>
                 </nav>
-                <h1>Search for News from Publisher</h1>
-
-                <fieldset id="category-fieldset">
-                    <form id="category-form" name="category-form" method="get" action="publishers.jsp">
-                        <div>
-                            <%
-                            out.println("<select name=\"publisher\" required>");
-                            out.println("<option>&nbsp;</option>");
-                            NewsSourceService service = new NewsSourceService();
-                            Iterable<String> publishers = service.findNames();
-                            out.println("Found any category? " + publishers.iterator().hasNext());
-                            for(String pub: publishers) {
-                                if(pub != null) {
-                                    out.println("<option>" + pub + "</option>");
-                                }
-                            }
-                            out.println("</select>");
-                            %>
-                            <input type="submit" value="Go!">
-                        </div>
-                    </form>
-                </fieldset>
             </header>
 
 
             <!-- MAIN CONTENT -->
             <main>
-                <section class="latest articles">
-                    <article>
-                        <div class="figures clearfix">
+                <article>
+                    <section class="top">
+                        <h1>Search for News from Publisher</h1>
+                        <fieldset id="category-fieldset">
+                            <form id="category-form" name="category-form" method="get" action="publishers.jsp">
+                                <div>
+                                    <%
+                                        out.println("<select name=\"publisher\" required>");
+                                        out.println("<option>&nbsp;</option>");
+                                        NewsSourceService service = new NewsSourceService();
+                                        Iterable<String> publishers = service.findNames();
+                                        out.println("Found any category? " + publishers.iterator().hasNext());
+                                        for (String pub : publishers) {
+                                            if (pub != null) {
+                                                out.println("<option>" + pub + "</option>");
+                                            }
+                                        }
+                                        out.println("</select>");
+                                    %>
+                                    <input type="submit" value="Go!">
+                                </div>
+                            </form>
+                        </fieldset>
+                    </section>
+                                    
+                    <section class="detail">
+                        <div class="summaries clearfix">
                             <%
                                 String name = request.getParameter("publisher");
-                                out.println("Looking up for: " + name);
                                 if (name != null) {
                                     Iterable<NewsArticle> articles = new NewsArticleService().findArticlesPublishedBy(name);
                                     for (NewsArticle art : articles) {
                                         if (art.getImageUrl() != null && !art.getImageUrl().isEmpty()) {
+                                            out.println("<div class=\"summary\">");                                            
                                             out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
                                             out.println("   <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
                                             out.println("       <figcaption>" + art.getTitle() + "</figcaption>");
                                             out.println("   </figure>");
                                             out.println("</a>");
+                                            out.println("</div>");
                                         }
                                     }
                                     articles = null;
                                 }
                             %>
                         </div>
-                    </article>
-                </section>
+                    </section>
+                </article>
             </main>
 
             <!-- FOOTER -->
