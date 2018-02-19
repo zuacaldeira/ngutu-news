@@ -8,6 +8,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/animation.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
     </head>
 
@@ -26,21 +27,24 @@
                     <li><a href="search.jsp">Search</a></li>
                 </ul>
             </nav>
-            <h1>NEWS.NGUTU.ORG</h1>
-            <h2>Celebrating the world as one</h2>
         </header>
 
 
         <!-- MAIN CONTENT -->
         <main>
-            <section>
-                <article>
+            <article>
+                <section class="top">
+                    <h1>NEWS.NGUTU.ORG</h1>
+                    <h2>Celebrating the world as one</h2>
+                </section>
+            
+                <section class="detail">
                     <p>
                         <strong>NGUTU NEWS</strong> bring news around the World, 
                         enlarging awareness of global trends and challenges, in 
                         an effective and productive way
                     </p>
-                    <div class="figures clearfix">
+                    <div id="stats" class="figures clearfix">
                         <figure id="articles-count" class="count-circle">
                             <p><% out.println(new StatsService().countAllArticles()); %></p>
                             <figcaption>Articles</figcaption>
@@ -62,8 +66,8 @@
                             <figcaption>Languages</figcaption>
                         </figure>
                     </div>                        
-                </article>
-            </section>                        
+                </section>                        
+            </article>
         </main>
 
         <!-- FOOTER -->

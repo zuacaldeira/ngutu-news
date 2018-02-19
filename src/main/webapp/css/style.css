@@ -5,44 +5,13 @@
     padding: 0;
 }
 
+/* BODY */
 body {
     font-family: 'Dosis';
     font-size: 16px;
     letter-spacing: .1em;
     color: black;
     background: rgba(255,255,255,.9);
-}
-
-h1, h2, h3 {
-    width: 100%;
-    text-align: center;
-}
-
-h1 {
-    font-size: 3em;
-    padding: 2em 0;
-}
-
-h2 {
-    font-size: 2em;
-    padding: 1.5em 0;
-}
-
-h3 {
-    font-size: 1em;    
-}
-
-p {
-    font-size: .5em;    
-}
-
-h1 a {
-    text-decoration: none;
-    color: white;
-}
-
-h1 a:hover {
-    color: red;
 }
 
 .clearer
@@ -59,19 +28,12 @@ h1 a:hover {
     display: block;
 }
 
-
-
+/* HEADER */
 header {
-    height: 100vh;
-    background-image: url(https://source.unsplash.com/random);
-    background-repeat:  no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
 
-/* NAVI */
-nav.top {
+/* TOP NAVIGATION */
+header nav {
     position: fixed;
     width: 100%;
     height: auto;
@@ -141,13 +103,31 @@ nav ul li.logo:hover {
 
 
 
-/* title pane */
-header h2 {
-    padding-top: 0%;
-    padding-bottom: 0%;
-    text-shadow: -2px 2px 10px #aaa;
-    font-style: italic;
+
+
+
+h3 {
+    font-size: 1em;    
 }
+
+p {
+    font-size: .5em;    
+}
+
+h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:hover {
+    color: red;
+}
+
+
+
+
+
+/* title pane */
 
 
 
@@ -159,30 +139,70 @@ main {
 }
 
 /* A section inside the main contaner */
-main section {
+main article {
     width: 100%;
-}
-
-/* An article */
-main section article
-{
-    width: 96%;
-    padding: 2%;
-    background: black;
-}
-
-main section article.top
-{
     height: 100vh;
+    background-image: url(https://source.unsplash.com/random);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;    
 }
 
-main section article > p {
-    width: 90%;
+main article h1 {
+    padding: 3em 0 0 0;
+    font-size: 3em;
+    color: white;
+    text-shadow: -2px 2px 10px #a3a3a3;
+}
+
+main article h2 {
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: -2px 2px 10px #a3a3a3;
+}
+
+main article p {
+    width: 70%;
+    margin: 0 auto;
     font-size: 1.2em;
     padding: 5%;
     text-align: left;
     color: white;
 }
+
+main article #stats {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* The top section */
+main article section.top {
+    height: 50vh;
+}
+
+/* An article */
+main article section.detail
+{
+    min-height: 50vh;
+    background-color: rgba(0,0,0,.3);
+    animation-name: headline-animation;
+    animation-duration: .5s;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+main section article h1 {
+    width: 100%;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 3em 0;
+}
+
+
 
 .figures {
     width: 90%;
