@@ -108,7 +108,7 @@ nav ul li a:visited {
     text-transform: uppercase;
     letter-spacing: .1em;
     word-spacing: .15em;
-    font-size: 1.2em;
+    font-size: 1.75em;
     color: red;
 }
 
@@ -142,12 +142,6 @@ nav ul li.logo:hover {
 
 
 /* title pane */
-header h1 {
-    padding-top: 25%;
-    padding-bottom: 0%;
-    text-shadow: -2px 2px 1px #aaa;
-}
-
 header h2 {
     padding-top: 0%;
     padding-bottom: 0%;
