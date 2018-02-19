@@ -73,14 +73,13 @@ header {
 /* NAVI */
 nav.top {
     position: fixed;
-    width: auto;
+    width: 100%;
     height: auto;
     background: rgba(0,0,0,.8);
     text-align: center;
 }
 
 nav ul {
-    width: auto;
     height: auto;
     list-style: none;
     padding: 1em;
@@ -90,6 +89,7 @@ nav ul li {
     display: inline;
     text-align: center;
     width: 10%;
+    margin: 0 .5em;
 }
 
 
@@ -108,7 +108,7 @@ nav ul li a:visited {
     text-transform: uppercase;
     letter-spacing: .1em;
     word-spacing: .15em;
-    font-size: 1.75em;
+    font-size: 1.25em;
     color: red;
 }
 
