@@ -17,30 +17,38 @@ article section fieldset form div {
     margin: 0 auto;
 }
 
-article section fieldset select{
-    background: transparent;
+article section fieldset form select {
+    background: rgba(255,0,0,.1);
     color: white;
-    width: 70%;
-    border-color: red;
+    width: 50%;
+    border: 2px solid red;
     font-size: 1.2em;
-    height: 3em;
+    height: 2.5em;
 }
 
 article section fieldset form input {
-    width: 100%;    
-    font-size: 1.25em;
-    height: 3em;
-    background: transparent;
+    width: 3em;    
+    height: 2.5em;
+    font-size: 1.2em;
+    background: red;
     color: white;
     border-radius: .4em;
     border-color: red;
+    border-width: 2px;
+    transition: background ease 1s, border-color ease 1s;
 }
 
-article section fieldset form input[type="submit"] {
-    width: 25%;    
-    background: red;
+article section fieldset form input[type="text"] {
+    width: 20em;     
+    background: rgba(255,0,0,.1);
 }
 
+article section fieldset form input[type="submit"]:hover {
+    color: red;
+    background: white;
+    border-color: white;
+}
+    
 article section fieldset form option {
     font-size: 2em;
 }
