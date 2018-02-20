@@ -217,10 +217,6 @@ figure.count-circle:focus {
     transform: scale(2);
 }
 
-.latest figure.count-circle:hover figcaption {
-    font-size: .5em;
-    padding: .5em 5% 0 5%;
-}
 
 
 figure p {
@@ -230,35 +226,12 @@ figure p {
     color: white;
 }
 
-
-.latest figure.count-circle p {
-    overflow: hidden;
-    display: none;
-}
-
 figure.count-circle:hover p {
-}
-
-.latest figure.count-circle figcaption {
-    border-top: 2px solid white;
-    font-size: .7em;
-    visibility: hidden;
-}
-
-.latest figure.count-circle:hover figcaption {
-    visibility: visible;
-    text-align: left;
-    background: rgba(255,0,0,.1);
 }
 
 figure.count-circle {
     border-radius: 1%; 
 }
-
-
-/* Search Form */
-
-
 
 /* FOOTER */
 footer nav {

@@ -43,7 +43,7 @@ response.setDateHeader ("Expires", -1);
 
             <!-- MAIN CONTENT -->
             <main>
-                <article class="latest">
+                <article>
                     <section class="top">
                         <h1>Latest News</h1>
                         <h2>Know Now</h2>
@@ -54,7 +54,7 @@ response.setDateHeader ("Expires", -1);
                             <%
                                 int max = 30;
                                 int delta = 5;
-                                Iterable<NewsArticle> articles = new NewsArticleService().findAll(0, max+delta);
+                                Iterable<NewsArticle> articles = new NewsArticleService().findLatest();
                                 int i = 0;
                                 for (NewsArticle art : articles) {
                                     if(i >= max) {
