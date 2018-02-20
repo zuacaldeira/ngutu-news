@@ -8,8 +8,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/animation.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/header-form.css">
     </head>
 
     <body>

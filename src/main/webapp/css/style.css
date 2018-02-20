@@ -65,7 +65,7 @@ nav ul li a:visited {
     text-transform: uppercase;
     letter-spacing: .1em;
     word-spacing: .15em;
-    font-size: 1em;
+    font-size: 1.4em;
     color: red;
 }
 
@@ -119,7 +119,7 @@ main article {
 
 /* The top section */
 main article section.top {
-    height: 50vh;
+    height: 100vh;
 }
 
 /* An article */
@@ -167,20 +167,21 @@ main article .summaries .summary {
 }
 
 main article .summaries .summary figure {
-    width: 19%;
+    width: 24%;
+    height: 120px;
     margin: .5%;
 }
 
 
 main article .summaries .summary figure figcaption {
-    font-size: .5em;
+    font-size: .75em;
     text-align: left;
-    transition: background ease 3s;
-    -webkit-transition: background ease 3s;
+    background: rgba(255,0,0,.1);
+    transition: background ease 2s;
+    -webkit-transition: background ease 2s;
 }
 
 main article .summaries .summary figure figcaption:hover {
-    font-size: .7em;
     background: rgba(255,0,0,.5);
 }
 
