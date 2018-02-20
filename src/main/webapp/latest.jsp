@@ -2,6 +2,11 @@
 <%@page import="backend.services.news.NewsArticleService"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
+<%
+response.setHeader("Cache-Control","no-cache"); 
+response.setHeader("Pragma","no-cache"); 
+response.setDateHeader ("Expires", -1); 
+%>
 
 <html>
 
