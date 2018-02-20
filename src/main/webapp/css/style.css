@@ -5,44 +5,13 @@
     padding: 0;
 }
 
+/* BODY */
 body {
     font-family: 'Dosis';
     font-size: 16px;
     letter-spacing: .1em;
     color: black;
     background: rgba(255,255,255,.9);
-}
-
-h1, h2, h3 {
-    width: 100%;
-    text-align: center;
-}
-
-h1 {
-    font-size: 3em;
-    padding: 2em 0;
-}
-
-h2 {
-    font-size: 2em;
-    padding: 1.5em 0;
-}
-
-h3 {
-    font-size: 1em;    
-}
-
-p {
-    font-size: .5em;    
-}
-
-h1 a {
-    text-decoration: none;
-    color: white;
-}
-
-h1 a:hover {
-    color: red;
 }
 
 .clearer
@@ -59,40 +28,30 @@ h1 a:hover {
     display: block;
 }
 
-
-
+/* HEADER */
 header {
-    height: 100vh;
-    background-image: url(https://source.unsplash.com/random);
-    background-repeat:  no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
 
-/* NAVI */
-header nav.top
-{
-    width: 100%;
-    height: 7vh;
-    background: rgba(0,0,0,.8);
+/* TOP NAVIGATION */
+header nav {
     position: fixed;
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,.8);
     text-align: center;
 }
 
 nav ul {
+    height: auto;
     list-style: none;
-    overflow: hidden;
-    height: 5vh;
-    line-height: 5vh;
-    padding-left: 1vw;
+    padding: 1em;
 }
 
 nav ul li {
     display: inline;
-    padding-right: .5em;
-    padding-left: .5em;
     text-align: center;
+    width: 10%;
+    margin: 0 .5em;
 }
 
 
@@ -111,7 +70,7 @@ nav ul li a:visited {
     text-transform: uppercase;
     letter-spacing: .1em;
     word-spacing: .15em;
-    font-size: 1.2em;
+    font-size: 1.25em;
     color: red;
 }
 
@@ -120,48 +79,27 @@ nav ul li a:hover,
 nav ul li.active a
 {
     color: white;
-    font-weight: bold;
 }
 
 nav ul li.active
 {
-    font-size: 1.5em;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    padding-bottom: 1em;    
 }
 
-nav.top .logo {
+nav ul li.logo {
+    width: 2em;
+    height: 2em;
     font-weight: bold;
     text-transform: uppercase;
-    color: white;
-    padding: 0 .21em;
+    color: yellow;
     margin-top: 0;
-    float: left;
-    animation: color 5s;
 }
 
-nav.top .logo:hover {
-    color: white;
+nav ul li.logo:hover {
+    color: blue;
 }
-
-
-
-/* title pane */
-header h1 {
-    padding-top: 25%;
-    padding-bottom: 0%;
-    text-shadow: -2px 2px 1px #aaa;
-}
-
-header h2 {
-    padding-top: 0%;
-    padding-bottom: 0%;
-    text-shadow: -2px 2px 10px #aaa;
-    font-style: italic;
-}
-
 
 
 /* MAIN CONTENT */
@@ -172,59 +110,85 @@ main {
 }
 
 /* A section inside the main contaner */
-main section {
+main article {
     width: 100%;
+    height: 100vh;
+    background-image: url(https://source.unsplash.com/daily?earth);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;    
+    overflow: scroll;
+}
+
+
+/* The top section */
+main article section.top {
+    height: 50vh;
 }
 
 /* An article */
-main section article
+main article section.detail
 {
-    width: 100%;
-    padding: 0;
-    background: black;
+    min-height: 50vh;
+    background-color: rgba(0,0,0,.5);
 }
 
-main section article.top
-{
-    height: 100vh;
+main article h1 {
+    padding: 3em 0 0 0;
+    font-size: 3em;
+    color: white;
+    text-shadow: -2px 2px 10px #a3a3a3;
 }
 
+main article h2 {
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: -2px 2px 10px #a3a3a3;
+}
 
-
-
-main section article > p {
-    width: 90%;
+main article p {
+    width: 70%;
+    margin: 0 auto;
     font-size: 1.2em;
     padding: 5%;
     text-align: left;
     color: white;
 }
 
-main section article .figures {
+main article #stats {
     width: 50%;
-    padding: 5% 25%;
-    color: white;    
+    margin: 0 auto;
 }
 
-.latest .figures {
-    width: 100%;
-    padding: 0% 0%;
+main article .summaries {
+    width: 90%;
+    margin: 1em 5%;
 }
 
-main section article .figures figure {
-    width: 18.8%;
-    margin: .1%;
+main article .summaries .summary {
+    display: inline;
 }
 
-.latest .figures figure {
-    width: 9.8%;
-    margin: .1%;
+main article .summaries .summary figure {
+    width: 19.0%;
+    margin: .5%;
 }
 
-main section article .figures figure > p {
-    width: 40%;
-    padding: 5% 30%;
+
+main article .summaries .summary figure figcaption {
+    font-size: .5em;
+    text-align: left;
 }
+
+main article .summaries .summary figure figcaption:hover {
+    font-size: .7em;
+    background: rgba(255,0,0,.5);
+}
+
+
+
 
 .contact-form
 {
@@ -244,11 +208,20 @@ figure.count-circle {
     border-radius: 5%;
     margin: .2em;
     color: white;
+    transition: cubic-bezier, transform ease-in-out 1s;
+    -webkit-transition: cubic-bezier, transform ease-in-out 1s;
 }
-figure.count-circle:hover {
-    transform: scale(1.7);
-    font-size: 1em;
+
+figure.count-circle:hover,
+figure.count-circle:focus {
+    transform: scale(2);
 }
+
+.latest figure.count-circle:hover figcaption {
+    font-size: .5em;
+    padding: .5em 5% 0 5%;
+}
+
 
 figure p {
     text-align: center;
@@ -275,11 +248,11 @@ figure.count-circle:hover p {
 .latest figure.count-circle:hover figcaption {
     visibility: visible;
     text-align: left;
-    background: rgba(0,0,0,.6);
+    background: rgba(255,0,0,.1);
 }
 
-#latest-news figure.count-circle {
-    border-radius: 5%; 
+figure.count-circle {
+    border-radius: 1%; 
 }
 
 
@@ -289,7 +262,7 @@ figure.count-circle:hover p {
 
 /* FOOTER */
 footer nav {
-    height: 5vh;
+    height: auto;
     background: rgba(0,0,0,.7);
 }
 

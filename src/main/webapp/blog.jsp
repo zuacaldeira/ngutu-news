@@ -17,7 +17,6 @@
             <header class="clearfix">
                 <nav class="top">
                     <ul>
-                        <li id="logo" class="logo"><a href="http://www.ngutu.org">ngutu.org</a></li>
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="latest.jsp">Latest</a></li>
                         <li><a href="categories.jsp">Categories</a></li>

@@ -25,7 +25,6 @@
                 <!-- TOP NAVIGATION  -->
                 <nav class="top clearfix">
                     <ul>
-                        <li id="logo" class="logo"><a href="http://www.ngutu.org">n</a></li>
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="latest.jsp">Latest</a></li>
                         <li><a href="categories.jsp">Categories</a></li>
@@ -35,62 +34,64 @@
                         <li><a href="search.jsp">Search</a></li>
                     </ul>
                 </nav>
-                
-                <h1>Search like a Polygot!</h1>
-                <fieldset id="fieldset">
-                    <form id="form" name="language-form" method="get" action="languages.jsp">
-                        <div>
-                            <%
-                            NewsSourceService service = new NewsSourceService();
-                            Iterable<String> languages = service.findLanguages();
-                            TreeSet<String> sortedLanguages = new TreeSet<String>();
-                            for(String lang: languages) {
-                                if(lang != null && MyDateUtils.getLanguage(lang) != null) {
-                                    sortedLanguages.add(MyDateUtils.getLanguage(lang));
-                                }
-                            }
-                            out.println("<select name=\"language\" required>");
-                            out.println("<option>&nbsp;</option>");
-                            for(String sorted: sortedLanguages) {
-                                if(sorted != null) {
-                                    out.println("<option>" + sorted + "</option>");
-                                }
-                            }
-                            out.println("</select>");
-                            %>
-                            <input type="submit" value="Go!">
-                        </div>
-                    </form>
-                </fieldset>
             </header>
 
 
             <!-- MAIN CONTENT -->
             <main>
-                <section class="latest articles">
-                    <article>
-                        <div class="figures clearfix">
+                <article>
+                    <section class="top">
+                        <h1>Search like a Polygot!</h1>
+                        <fieldset id="fieldset">
+                            <form id="form" name="language-form" method="get" action="languages.jsp">
+                                <div>
+                                    <%
+                                        NewsSourceService service = new NewsSourceService();
+                                        Iterable<String> languages = service.findLanguages();
+                                        TreeSet<String> sortedLanguages = new TreeSet<String>();
+                                        for (String lang : languages) {
+                                            if (lang != null && MyDateUtils.getLanguage(lang) != null) {
+                                                sortedLanguages.add(MyDateUtils.getLanguage(lang));
+                                            }
+                                        }
+                                        out.println("<select name=\"language\" required>");
+                                        out.println("<option>&nbsp;</option>");
+                                        for (String sorted : sortedLanguages) {
+                                            if (sorted != null) {
+                                                out.println("<option>" + sorted + "</option>");
+                                            }
+                                        }
+                                        out.println("</select>");
+                                    %>
+                                    <input type="submit" value="Go!">
+                                </div>
+                            </form>
+                        </fieldset>
+                    </section>
+                    <section class="detail">
+                        <div class="summaries clearfix">
                             <%
                                 String lang = request.getParameter("language");
                                 if (lang != null) {
                                     lang = MyDateUtils.getLanguageCode(lang);
-                                    out.println("Looking up for: " + lang);
                                     Iterable<NewsArticle> articles = new NewsArticleService().findArticlesWithLanguage(lang);
                                     for (NewsArticle art : articles) {
                                         if (art.getImageUrl() != null && !art.getImageUrl().isEmpty()) {
+                                            out.println("<div class=\"summary\">");
                                             out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
                                             out.println("   <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
                                             out.println("       <figcaption>" + art.getTitle() + "</figcaption>");
                                             out.println("   </figure>");
                                             out.println("</a>");
+                                            out.println("</div>");
                                         }
                                     }
                                     articles = null;
                                 }
                             %>
                         </div>
-                    </article>
-                </section>
+                    </section>
+                </article>
             </main>
 
             <!-- FOOTER -->

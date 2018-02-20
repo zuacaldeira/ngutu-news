@@ -21,7 +21,6 @@
                 <!-- TOP NAVIGATION  -->
                 <nav class="top">
                     <ul>
-                        <li id="logo" class="logo"><a href="http://www.ngutu.org">ngutu.org</a></li>
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="latest.jsp">Latest</a></li>
                         <li><a href="categories.jsp">Categories</a></li>
@@ -31,43 +30,45 @@
                         <li class="active"><a href="search.jsp">Search</a></li>
                     </ul>
                 </nav>
-                <h1>Search for News</h1>
-                <fieldset id="search-fieldset">
-                    <form id="search-form" name="search-form" method="get" action="search.jsp">
-                        <div>
-                            <input name="search" type="text" size="50" required>
-                        </div>
-                    </form>
-                </fieldset>
             </header>
 
 
             <!-- MAIN CONTENT -->
             <main>
-                <section class="latest articles">
-                    <article>
-                        <div class="figures clearfix">
+                <article>
+                    <section class="top">
+                        <h1>Search for News</h1>
+                        <fieldset id="search-fieldset">
+                            <form id="search-form" name="search-form" method="get" action="search.jsp">
+                                <div>
+                                    <input name="search" type="text" size="50" required>
+                                </div>
+                            </form>
+                        </fieldset>
+                    </section>
+                    <section class="detail">
+                        <div class="summaries clearfix">
                             <%
-                                out.println("<p>" + "looking for: " + request.getParameter("search") + "</p>");
-
                                 if (request.getParameter("search") != null) {
                                     String searchTerm = (String) request.getParameter("search");
                                     Iterable<NewsArticle> articles = new NewsArticleService().findArticlesWithText(searchTerm);
                                     for (NewsArticle art : articles) {
                                         if (art.getImageUrl() != null && !art.getImageUrl().isEmpty()) {
+                                            out.println("<div class=\"summary\">");
                                             out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
                                             out.println("   <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
                                             out.println("       <figcaption>" + art.getTitle() + "</figcaption>");
                                             out.println("   </figure>");
                                             out.println("</a>");
+                                            out.println("</div>");
                                         }
                                     }
                                     articles = null;
                                 }
                             %>                        
                         </div>
-                    </article>
-                </section>
+                    </section>
+                </article>
             </main>
 
             <!-- FOOTER -->

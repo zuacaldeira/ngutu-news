@@ -8,7 +8,11 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/animation.css">
         <link rel="stylesheet" type="text/css" href="css/mobile.css">
+        <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/image_fade.js"></script>
     </head>
 
     <body>
@@ -20,7 +24,6 @@
                 <!-- TOP NAVIGATION  -->
                 <nav class="top clearfix">
                     <ul>
-                        <li id="logo" class="logo"><a href="http://www.ngutu.org">ngutu.org</a></li>
                         <li><a href="index.jsp">Home</a></li>
                         <li class="active"><a href="latest.jsp">Latest</a></li>
                         <li><a href="categories.jsp">Categories</a></li>
@@ -30,16 +33,19 @@
                         <li><a href="search.jsp">Search</a></li>
                     </ul>
                 </nav>
-                <h1>Latest News</h1>
-                <h2>Know Now</h2>
             </header>
 
 
             <!-- MAIN CONTENT -->
             <main>
-                <section class="latest articles">
-                    <article>
-                        <div class="figures clearfix">
+                <article class="latest">
+                    <section class="top">
+                        <h1>Latest News</h1>
+                        <h2>Know Now</h2>
+                    </section>
+                    
+                    <section class="detail">
+                        <div class="summaries clearfix">
                             <%
                                 int max = 30;
                                 int delta = 5;
@@ -50,15 +56,16 @@
                                         break;
                                     }
                                     if (art.getImageUrl() != null && !art.getImageUrl().isEmpty()) {
+                                        out.println("<div class=\"summary\">");
                                         out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
                                         out.println("   <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
                                         out.println("       <figcaption>" + art.getTitle() + "</figcaption>");
                                         out.println("   </figure>");
                                         out.println("</a>");
+                                        out.println("</div>");
                                         i++;
                                     }
                                 }
-                                articles = null;
                             %>
                         </div>                        
                     </article>

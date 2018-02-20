@@ -9,8 +9,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
         <link rel="stylesheet" type="text/css" href="css/header-form.css">
+        <link rel="stylesheet" type="text/css" href="css/mobile.css">
     </head>
 
     <body>
@@ -22,7 +22,6 @@
                 <!-- TOP NAVIGATION  -->
                 <nav class="top clearfix">
                     <ul>
-                        <li id="logo" class="logo"><a href="http://www.ngutu.org">n</a></li>
                         <li><a href="index.jsp">Home</a></li>
                         <li><a href="latest.jsp">Latest</a></li>
                         <li class="active"><a href="categories.jsp">Categories</a></li>
@@ -32,54 +31,58 @@
                         <li><a href="search.jsp">Search</a></li>
                     </ul>
                 </nav>
-                <h1>Search for News by Tag</h1>
-                
-                <fieldset id="category-fieldset">
-                    <form id="category-form" name="category-form" method="get" action="categories.jsp">
-                        <div>
-                            <%
-                            out.println("<select name=\"category\" required>");
-                            out.println("<option>&nbsp;</option>");
-                            Iterable<String> categories = new NewsSourceService().findCategories();
-                            out.println("Found any category? " + categories.iterator().hasNext());
-                            for(String cat: categories) {
-                                if(cat != null) {
-                                    out.println("<option>" + cat + "</option>");
-                                }
-                            }
-                            out.println("</select>");
-                                %>
-                            <input type="submit" value="Go!">
-                        </div>
-                    </form>
-                </fieldset>
             </header>
 
 
             <!-- MAIN CONTENT -->
             <main>
-                <section class="latest articles">
-                    <article>
-                        <div class="figures clearfix">
-                        <%
-                            String category = request.getParameter("category");
-                            if (category != null) {
-                                Iterable<NewsArticle> articles = new NewsArticleService().findArticlesTaggedAs(category);
-                                for (NewsArticle art : articles) {
-                                    if (art.getImageUrl() != null && !art.getImageUrl().isEmpty()) {
-                                        out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
-                                        out.println("   <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
-                                        out.println("       <figcaption>" + art.getTitle() + "</figcaption>");
-                                        out.println("   </figure>");
-                                        out.println("</a>");
+                <article class="categories">
+                    <section class="top">
+                        <h1>Search for News by Tag</h1>
+                        <fieldset>
+                            <form id="category-form" name="category-form" method="get" action="categories.jsp">
+                                <div>
+                                    <%
+                                        out.println("<select name=\"category\" required>");
+                                        out.println("<option>&nbsp;</option>");
+                                        Iterable<String> categories = new NewsSourceService().findCategories();
+                                        out.println("Found any category? " + categories.iterator().hasNext());
+                                        for (String cat : categories) {
+                                            if (cat != null) {
+                                                out.println("<option>" + cat + "</option>");
+                                            }
+                                        }
+                                        out.println("</select>");
+                                    %>
+                                    <input type="submit" value="Go!">
+                                </div>
+                            </form>
+                        </fieldset>
+                    </section>
+                                    
+                    <section class="detail">
+                        <div class="summaries clearfix">
+                            <%
+                                String category = request.getParameter("category");
+                                if (category != null) {
+                                    Iterable<NewsArticle> articles = new NewsArticleService().findArticlesTaggedAs(category);
+                                    for (NewsArticle art : articles) {
+                                        if (art.getImageUrl() != null && !art.getImageUrl().isEmpty()) {
+                                            out.println("<div class=\"summary\">");
+                                            out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
+                                            out.println("   <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
+                                            out.println("       <figcaption>" + art.getTitle() + "</figcaption>");
+                                            out.println("   </figure>");
+                                            out.println("</a>");
+                                            out.println("</div>");
+                                        }
                                     }
+                                    articles = null;
                                 }
-                                articles = null;
-                            }
-                        %>
+                            %>
                         </div>
-                    </article>
-                </section>
+                    </section>
+                </article>
             </main>
 
             <!-- FOOTER -->
