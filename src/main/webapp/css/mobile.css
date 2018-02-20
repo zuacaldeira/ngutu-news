@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1023px) {
+@media screen and (min-width: 601px) and (max-width: 900px) {
     main article #stats {
         width: 70%;
         margin: 0 15%;
@@ -34,12 +34,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    main article #stats {
-        width: 80%;
-        margin: 0 10%;
-    }
-
+@media screen and (min-width: 401px) and (max-width: 600px) {
     main article .summaries {
         width: 100%;
         margin: 0 0%;
@@ -47,9 +42,9 @@
     }
 
     main article .summaries .summary figure {
-        width: 96%;
+        width: 48%;
         height: 150px;
-        margin: .75% 2%;
+        margin: .75% 1%;
     }
 
     main article .summaries .summary figure figcaption {
@@ -74,5 +69,13 @@
 
     article section fieldset form select {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main article .summaries .summary figure {
+        width: 98%;
+        height: 150px;
+        margin: .75% 1%;
     }
 }
