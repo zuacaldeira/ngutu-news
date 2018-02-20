@@ -34,52 +34,54 @@
                         <li><a href="search.jsp">Search</a></li>
                     </ul>
                 </nav>
-                <h1>Search like a World Citizen!</h1>
-
-                <fieldset id="fieldset">
-                    <form id="form" name="country-form" method="get" action="countries.jsp">
-                        <div>
-                            <%
-                            NewsSourceService service = new NewsSourceService();
-                            Iterable<String> countries = service.findCountries();
-                            TreeSet<String> sortedCountries = new TreeSet<String>();
-                            for(String country: countries) {
-                                if(country != null && MyDateUtils.getCountry(country) != null) {
-                                    sortedCountries.add(MyDateUtils.getCountry(country));
-                                }
-                            }
-                            out.println("<select name=\"country\" required>");
-                            out.println("<option>&nbsp;</option>");
-                            for(String sorted: sortedCountries) {
-                                out.println("<option>" + sorted + "</option>");
-                            }
-                            out.println("</select>");
-                            %>
-                            <input type="submit" value="Go!">
-                        </div>
-                    </form>
-                </fieldset>
             </header>
 
 
             <!-- MAIN CONTENT -->
             <main>
-                <section class="latest articles">
-                    <article>
-                        <div class="figures clearfix">
+                <article>
+                    <section class="top">
+                        <h1>Search like a World Citizen!</h1>
+                        <fieldset id="fieldset">
+                            <form id="form" name="country-form" method="get" action="countries.jsp">
+                                <div>
+                                    <%
+                                        NewsSourceService service = new NewsSourceService();
+                                        Iterable<String> countries = service.findCountries();
+                                        TreeSet<String> sortedCountries = new TreeSet<String>();
+                                        for (String country : countries) {
+                                            if (country != null && MyDateUtils.getCountry(country) != null) {
+                                                sortedCountries.add(MyDateUtils.getCountry(country));
+                                            }
+                                        }
+                                        out.println("<select name=\"country\" required>");
+                                        out.println("<option>&nbsp;</option>");
+                                        for (String sorted : sortedCountries) {
+                                            out.println("<option>" + sorted + "</option>");
+                                        }
+                                        out.println("</select>");
+                                    %>
+                                    <input type="submit" value="Go!">
+                                </div>
+                            </form>
+                        </fieldset>
+                    </section>
+                    <section class="detail">
+                        <div class="summaries clearfix">
                             <%
                                 String country = request.getParameter("country");
                                 if (country != null) {
                                     country = MyDateUtils.getCountryCode(country);
-                                    out.println("Looking up for: " + country);
                                     Iterable<NewsArticle> articles = new NewsArticleService().findArticlesWithCountry(country);
                                     for (NewsArticle art : articles) {
                                         if (art.getImageUrl() != null && !art.getImageUrl().isEmpty()) {
+                                            out.println("<div class=\"summary\">");
                                             out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
                                             out.println("   <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
                                             out.println("       <figcaption>" + art.getTitle() + "</figcaption>");
                                             out.println("   </figure>");
                                             out.println("</a>");
+                                            out.println("</div>");
                                         }
                                     }
                                     articles = null;

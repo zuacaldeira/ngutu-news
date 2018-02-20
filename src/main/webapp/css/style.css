@@ -102,35 +102,6 @@ nav ul li.logo:hover {
 }
 
 
-
-
-
-
-h3 {
-    font-size: 1em;    
-}
-
-p {
-    font-size: .5em;    
-}
-
-h1 a {
-    text-decoration: none;
-    color: white;
-}
-
-h1 a:hover {
-    color: red;
-}
-
-
-
-
-
-/* title pane */
-
-
-
 /* MAIN CONTENT */
 
 main {
@@ -142,7 +113,7 @@ main {
 main article {
     width: 100%;
     height: 100vh;
-    background-image: url(https://source.unsplash.com/daily);
+    background-image: url(https://source.unsplash.com/random?daily);
     background-repeat:  no-repeat;
     background-size: cover;
     background-position: center center;
