@@ -6,7 +6,6 @@
     <artifactId>ngutu-news</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-
     <name>ngutu-news</name>
 
     <properties>
@@ -18,19 +17,14 @@
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
-            <version>7.0</version>
+            <version>8.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.zuacaldeira</groupId>
             <artifactId>flex-app-backend</artifactId>
-            <version>1.1.36</version>
+            <version>1.1.37-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-util</artifactId>
-            <version>9.4.8.v20171121</version>
-        </dependency>   
     </dependencies>
 
     <build>
@@ -38,10 +32,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
+                <version>3.7.0</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <compilerArguments>
                         <endorseddirs>${endorsed.dir}</endorseddirs>
                     </compilerArguments>
@@ -50,7 +44,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.3</version>
+                <version>3.2.0</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
@@ -95,16 +89,6 @@
                          </configuration>
                      </execution>
                 </executions>
-            </plugin>
-            <!-- The Jetty plugin allows us to easily test the development build by
-            running jetty:run on the command line. -->
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.4.8.v20171121</version>
-                <configuration>
-                    <scanIntervalSeconds>2</scanIntervalSeconds>
-                </configuration>
             </plugin>
         </plugins>
     </build>

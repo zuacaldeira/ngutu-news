@@ -1,3 +1,9 @@
+<%@page import="java.util.Enumeration"%>
+<%@page import="db.news.NewsArticle"%>
+<%@page import="backend.services.news.NewsArticleService"%>
+<%@page import="backend.utils.MyDateUtils"%>
+<%@page import="java.util.TreeSet"%>
+<%@page import="backend.services.news.NewsSourceService"%>
 <%@page import="backend.services.news.NewsAuthorService"%>
 <%@page import="backend.services.news.StatsService"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -7,80 +13,41 @@
 
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="css/mobile.css">
-        <link rel="stylesheet" type="text/css" href="css/header-form.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet"  href="css/style.css" type="text/css">
+        <link rel="stylesheet"  href="css/mobile.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/nested_dropdown.js"></script>
     </head>
 
     <body>
         <!-- HEADER -->
         <header>
             <!-- TOP NAVIGATION  -->
-            <nav class="top">
-                <ul>
-                    <li class="active"><a href="index.jsp">Home</a></li>
-                    <li><a href="latest.jsp">Latest</a></li>
-                    <li><a href="categories.jsp">Categories</a></li>
-                    <li><a href="publishers.jsp">Publishers</a></li>
-                    <li><a href="languages.jsp">Languages</a></li>
-                    <li><a href="countries.jsp">Countries</a></li>
-                    <li><a href="search.jsp">Search</a></li>
-                </ul>
-            </nav>
+            <%@include file="jsp/nav.jsp" %>
+            <%@include file="jsp/jumbotron.jsp"%>
         </header>
 
 
         <!-- MAIN CONTENT -->
         <main>
-            <article>
-                <section class="top">
-                    <h1>NEWS.NGUTU.ORG</h1>
-                    <h2>Celebrating the world as one</h2>
-                </section>
-            
-                <section class="detail">
-                    <p>
-                        <strong>NGUTU NEWS</strong> bring news around the World, 
-                        enlarging awareness of global trends and challenges, in 
-                        an effective and productive way
-                    </p>
-                    <div id="stats" class="figures clearfix">
-                        <figure id="articles-count" class="count-circle">
-                            <p><% out.println(new StatsService().countAllArticles()); %></p>
-                            <figcaption>Articles</figcaption>
-                        </figure>
-                        <figure id="authors-count" class="count-circle">
-                            <p><% out.println(new NewsAuthorService().count()); %></p>
-                            <figcaption>Authors</figcaption>
-                        </figure>
-                        <figure id="publishers-count" class="count-circle">
-                            <p><% out.println(new StatsService().countAllPublishers()); %></p>
-                            <figcaption>Publishers</figcaption>
-                        </figure>
-                        <figure id="countries-count" class="count-circle">
-                            <p><% out.println(new StatsService().countAllCountries()); %></p>
-                            <figcaption>Countries</figcaption>
-                        </figure>
-                        <figure id="languages-count" class="count-circle">
-                            <p><% out.println(new StatsService().countAllLanguages());%></p>
-                            <figcaption>Languages</figcaption>
-                        </figure>
-                    </div>                        
-                </section>                        
-            </article>
+            <div class="container-fluid">
+                <div class="row">
+                    <%@include file="jsp/summaries.jsp" %>
+                </div>
         </main>
 
         <!-- FOOTER -->
-        <footer>
-            <nav>
-                <ul>
+        <footer class="footer navbar navbar-inverse">
+                <ul class="nav navbar-nav">
                     <li><a href="#">impressum</a></li>
                     <li><a href="#">privacy</a></li>
                     <li><a href="#">about us</a></li>
                     <li><a href="contact.jsp">Contact</a></li>
                     <li><a href="blog.jsp">Blog</a></li>
                 </ul>
-            </nav>
         </footer>
     </body>
 

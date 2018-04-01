@@ -27,7 +27,13 @@
                         <li><a href="publishers.jsp">Publishers</a></li>
                         <li><a href="languages.jsp">Languages</a></li>
                         <li><a href="countries.jsp">Countries</a></li>
-                        <li class="active"><a href="search.jsp">Search</a></li>
+                        <li class="active">
+                            <form id="search-form" name="search-form" method="get" action="search.jsp">
+                            <div class="form-group">
+                                <input class="form-control" name="search" type="text" size="50" required>
+                            </div>
+                            </form>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -40,9 +46,7 @@
                         <h1>Search for News</h1>
                         <fieldset id="search-fieldset">
                             <form id="search-form" name="search-form" method="get" action="search.jsp">
-                                <div>
-                                    <input name="search" type="text" size="50" required>
-                                </div>
+                                <input name="search" type="text" size="50" required>
                             </form>
                         </fieldset>
                     </section>

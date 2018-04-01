@@ -2,22 +2,16 @@
     
 }
 
-article section.top fieldset {
-    border: none;
-    width: 50%;
-    margin: 0 auto;
-}
-
-article section.top fieldset form {
+form {
     height: 5em;
-    margin: 0 auto;    
+    margin: 5em auto;    
 }
 
-article section fieldset form div {
+form div {
     margin: 0 auto;
 }
 
-article section fieldset form select {
+form select {
     background: rgba(255,0,0,.1);
     color: white;
     width: 50%;
@@ -26,7 +20,7 @@ article section fieldset form select {
     height: 2.5em;
 }
 
-article section fieldset form input {
+form input {
     width: 3em;    
     height: 2.5em;
     font-size: 1.2em;
@@ -38,17 +32,17 @@ article section fieldset form input {
     transition: background ease 1s, border-color ease 1s;
 }
 
-article section fieldset form input[type="text"] {
+form input[type="text"] {
     width: 20em;     
     background: rgba(255,0,0,.1);
 }
 
-article section fieldset form input[type="submit"]:hover {
+form input[type="submit"]:hover {
     color: red;
     background: white;
     border-color: white;
 }
     
-article section fieldset form option {
+form option {
     font-size: 2em;
 }
