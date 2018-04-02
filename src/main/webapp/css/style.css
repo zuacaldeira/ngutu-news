@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&subset=latin-ext');
 
 * {
     margin: 0;
@@ -12,7 +12,7 @@ body {
     letter-spacing: .1em;
     color: black;
     background: rgba(255,255,255,.9);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .clearer
@@ -40,8 +40,17 @@ nav.navbar {
     border-radius: 0;
 }
 
+nav.navbar ul li ul {
+    background: black;
+    border: 1px solid yellow;    
+}
 nav.navbar li, header nav.navbar li a {
-    color: tomato;
+    color: yellow;
+}
+
+header nav.navbar li a:hover {
+    color: black;
+    background: yellow;
 }
 
 .scrollable-menu {
@@ -69,7 +78,7 @@ nav.navbar li, header nav.navbar li a {
 .jumbotron .message {
     width: 100%;
     margin: 15vh auto;
-    height: 50vh;
+    height: auto;
     color: white;
     text-align: justify;
 }
@@ -83,6 +92,11 @@ nav.navbar li, header nav.navbar li a {
 .jumbotron form input[type="text"]{
     background: transparent;
     color: white;
+}
+
+.jumbotron form button[type="submit"]{
+    background: yellow;
+    color: black;
 }
 
 .jumbotron .message  h1 {
@@ -106,17 +120,6 @@ nav.navbar li, header nav.navbar li a {
     display: inline;
 }
 
-.dropdown-submenu {
-    position: relative;
-}
-
-.dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -1px;
-}
-
-
 
 /* MAIN CONTENT */
 
@@ -124,56 +127,74 @@ main {
     width: 100%;
     min-height: 55vh;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.summaries-context {
+    background: black;
+    color: yellow;
+    padding-top: .5em;
+}
+.summaries-context .title {
+    text-align: left;
+}
+
+.summaries-context .actions {
+    text-align: right;
 }
 
 .summaries {
     width: 100%;
-    min-height: 50vh;
-    padding-bottom: 0;
     margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .summary {
-    display: inline-block;
-    width: 22%;
-    margin: 0;
-    padding: 0;
 }
 
 .summary figure {
-    position: relative;
-}
-.summary figure.count-circle {
     width: 100%;
     height: 200px;
-    box-shadow: 0 0 5px #fff;
-    float: left;
-    color: white;
     transition: cubic-bezier, transform ease-in-out 1s;
     -webkit-transition: cubic-bezier, transform ease-in-out 1s;
+    margin: 1em 0;
+    position: relative;
 }
-
 
 
 .summary figure figcaption {
     width: 100%;
-    padding: .3em;
-    font-size: .75em;
-    text-align: left;
-    background: rgba(255,0,0,.65);
-    transition: background ease 2s;
-    -webkit-transition: background ease 2s;
+    height: 4em;
     position: absolute;
     bottom:0;
-    height: 3.25em;
+    text-align: left;
+    font-size: .75em;
+    overflow-y: hidden; 
+    background: rgba(255,255,0,.75);
+    color: black;
+    transition: background ease 2s;
+    -webkit-transition: background ease 2s;
 }
 
 .summary figure figcaption:hover {
-    background: rgba(0,0,0,1);
-    color: rgba(255,0,0,1);
+    background: black;
+    color: rgba(255,255,0,1);
+}
+.summary figure figcaption img {
+    width: 4em;
+    height: 4em;
+    float: left;
+    padding: 0;
+    margin-right: 1em;
 }
 
-
 footer {
+}
+
+footer.navbar-inverse {
     border-radius: 0%;
+    margin: 0;
 }

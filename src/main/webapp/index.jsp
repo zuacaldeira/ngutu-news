@@ -32,11 +32,8 @@
 
 
         <!-- MAIN CONTENT -->
-        <main>
-            <div class="container-fluid">
-                <div class="row">
-                    <%@include file="jsp/summaries.jsp" %>
-                </div>
+        <main class="container-fluid">
+            <%@include file="jsp/summaries.jsp" %>
         </main>
 
         <!-- FOOTER -->

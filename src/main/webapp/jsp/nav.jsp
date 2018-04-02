@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">  
                 <li class="active"><a href="index.jsp">Home</a></li>
-                <li><a href="#news-viewport">Latest</a></li>
+                <li><a href="index.jsp?latest">Latest</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
                     <ul class="dropdown-menu scrollable-menu">

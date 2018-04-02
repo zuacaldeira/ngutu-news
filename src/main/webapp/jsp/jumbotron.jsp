@@ -29,7 +29,7 @@
                     <div class="input-group">
                         <input class="form-control" name="search" type="text" size="100%" required>
                         <div class="input-group-btn">
-                            <button class="btn btn-success" type="submit">
+                            <button class="btn" type="submit">
                                 <i class="glyphicon glyphicon-search"></i>
                             </button>
                         </div>
