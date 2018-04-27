@@ -4,6 +4,8 @@
     Author     : zua
 --%>
 
+<%@page import="crawlers.Logos"%>
+<%@page import="db.news.NewsSource"%>
 <%@page import="backend.services.news.NewsSourceService"%>
 <%@page import="backend.utils.MyDateUtils"%>
 <%@page import="backend.services.news.NewsArticleService"%>
@@ -34,30 +36,67 @@
         message = "Search results for: " + searchTerm.toUpperCase();
         articles = new NewsArticleService().findArticlesWithText(searchTerm);
     } else {
-        message = "News from around the World: LATEST";
+        message = "Latest News";
         articles = new NewsArticleService().findAll(0, 25);
     }
 %>
-<div class="row summaries-context">
-    <div class="col-sm-6 title">
+<div class="container-fluid summaries-context">
+    <div class="title">
         <% out.print(message); %>
     </div>
-    <div class="col-sm-6 actions">
-        <p>please!</p>
+    <div class="actions">
+        <% 
+            String view = request.getParameter("view");
+            if (view == null || view.equals("grid")) {
+                out.println("<a href=\"index.jsp?view=grid\"><span class=\"glyphicon glyphicon-th active\"></span></a>");        
+                out.println("<a href=\"index.jsp?view=list\"><span class=\"glyphicon glyphicon-th-list\"></span></a>");        
+            }
+            else {
+                out.println("<a href=\"index.jsp?view=grid\"><span class=\"glyphicon glyphicon-th\"></span></a>");        
+                out.println("<a href=\"index.jsp?view=list\"><span class=\"glyphicon glyphicon-th-list active\"></span></a>");        
+            }
+        %>
     </div>
 </div>
 <div class="summaries">
     <%
-        for (NewsArticle art : articles) {
-            String logoUrl = new NewsSourceService().findSourceWithSourceId(art.getSourceId()).getLogoUrl();
-            if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null) {
-                out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
-                out.println("   <div class=\"summary\">");
-                out.println("       <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
-                out.println("           <figcaption> <img class=\"source-img\" src=\"" + logoUrl + "\"><div>" + art.getTitle() + "</div></figcaption>");
-                out.println("       </figure>");
-                out.println("   </div>");
-                out.println("</a>");
+        if (view == null || view.equals("grid")) {
+            for (NewsArticle art : articles) {
+                NewsSource source = new NewsSourceService().findSourceWithSourceId(art.getSourceId());
+                String logoUrl = Logos.getLogo(source.getSourceId());
+                String sourceName = source.getName();
+                if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null) {
+                    out.println("<div class=\"summary\">");
+                    out.println("   <div class=\"news-copyright\">");
+                    out.println("      <div class=\"news-source\">");
+                    out.println("          <img class=\"source-image\" src=\"" + logoUrl + "\">");
+                    out.println("          <div class=\"source-name\">" + sourceName);
+                    out.println("          </div>");
+                    out.println("      </div>");
+                    out.println("   </div>");
+                    out.println("   <a href=\"" + art.getUrl() + "\" target=\"_blank\">");
+                    out.println("       <div class=\"news-image\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
+                    out.println("       </div>");
+                    out.println("       <div class=\"news-title\">" + art.getTitle());
+                    out.println("       </div>");
+                    out.println("   </a>");
+                    out.println("</div>");
+                }
+            }
+        }
+        else {
+            for (NewsArticle art : articles) {
+                String logoUrl = new NewsSourceService().findSourceWithSourceId(art.getSourceId()).getLogoUrl();
+                if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null) {
+                    out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
+                    out.println("   <div class=\"summary\">");
+                    out.println("       <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
+                    out.println("           <figcaption> <img class=\"source-img\" src=\"" + logoUrl + "\"><div>" + art.getTitle() + "</div></figcaption>");
+                    out.println("       </figure>");
+                    out.println("       <p>" + art.getDescription() + "</p>");
+                    out.println("   </div>");
+                    out.println("</a>");
+                }
             }
         }
     %>

@@ -27,12 +27,12 @@
         <header>
             <!-- TOP NAVIGATION  -->
             <%@include file="jsp/nav.jsp" %>
-            <%@include file="jsp/jumbotron.jsp"%>
         </header>
 
 
         <!-- MAIN CONTENT -->
         <main class="container-fluid">
+            <%@include file="jsp/jumbotron.jsp"%>
             <%@include file="jsp/summaries.jsp" %>
         </main>
 
