@@ -4,7 +4,6 @@
     Author     : zua
 --%>
 
-<%@page import="crawlers.Logos"%>
 <%@page import="db.news.NewsSource"%>
 <%@page import="backend.services.news.NewsSourceService"%>
 <%@page import="backend.utils.MyDateUtils"%>
@@ -63,9 +62,9 @@
         if (view == null || view.equals("grid")) {
             for (NewsArticle art : articles) {
                 NewsSource source = new NewsSourceService().findSourceWithSourceId(art.getSourceId());
-                String logoUrl = Logos.getLogo(source.getSourceId());
+                String logoUrl = source.getLogoUrl();
                 String sourceName = source.getName();
-                if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null) {
+                if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null && !logoUrl.isEmpty()) {
                     out.println("<div class=\"summary\">");
                     out.println("   <div class=\"news-copyright\">");
                     out.println("      <div class=\"news-source\">");
