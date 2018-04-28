@@ -79,6 +79,10 @@
                     out.println("       <div class=\"news-title\">" + art.getTitle());
                     out.println("       </div>");
                     out.println("   </a>");
+                    if(art.getDescription() != null && !art.getDescription().isEmpty()) {
+                    out.println("   <div class=\"news-description\">" + art.getDescription());
+                    out.println("   </div>");
+                    }
                     out.println("</div>");
                 }
             }
