@@ -207,6 +207,11 @@ main {
     background: white;
 }
 
+.summary.list{
+    height: auto;
+}
+
+
 .summary .news-copyright {
     width:100%;
     height: 3em;
@@ -214,7 +219,7 @@ main {
     margin: 0em;
 }
 
-.news-source .source-image {
+.summary .news-source .source-image {
     width: 3em;
     height: 3em;
     padding: 0;
@@ -223,7 +228,7 @@ main {
     float: left;
 }
 
-.news-source .source-name {
+.summary .news-source .source-name {
     height: 3em;
     line-height: 3em;
     padding: 0em .2em 0 .5em;
@@ -233,12 +238,19 @@ main {
     float: left;
 }
 
-.summary .news-image {
+.summary.grid .news-image {
     width: 100%;
-    height: 12em;
+    height: 10em;
 }
 
-.summary .news-title {
+.summary.list .news-image {
+    width: 33%;
+    height: 10em;
+    margin-right: 1em;
+    float:left;
+}
+
+.summary.grid  .news-title {
     width: 100%;
     height: auto;
     padding: .5em;
@@ -247,11 +259,15 @@ main {
     background-color: white;
 }
 
-.news-title:hover {
+.summary.list .news-title {
+    text-align: left;
+}
+
+.summary.grid .news-title:hover {
     color: #111;
 }
 
-.news-title a {
+.summary.grid .news-title a {
     text-decoration: none;
 }
 
@@ -259,7 +275,7 @@ main {
     background: yellow;
 }
 
-.summary .news-description {
+.summary.grid .news-description {
     height: auto;
     color: #777;
     font-size: .75em;
@@ -267,6 +283,13 @@ main {
     padding: .5em;
     margin: 0;
 }
+.summary.list .news-description {
+    text-align: left;
+    padding-top: 1em;
+    color: #777;
+    font-size: .75em;
+}
+
 
 footer {
     padding: 0;

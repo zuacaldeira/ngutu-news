@@ -59,47 +59,35 @@
 </div>
 <div class="summaries">
     <%
-        if (view == null || view.equals("grid")) {
-            for (NewsArticle art : articles) {
-                NewsSource source = new NewsSourceService().findSourceWithSourceId(art.getSourceId());
-                String logoUrl = source.getLogoUrl();
-                String sourceName = source.getName();
-                if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null && !logoUrl.isEmpty()) {
-                    out.println("<div class=\"summary\">");
-                    out.println("   <div class=\"news-copyright\">");
-                    out.println("      <div class=\"news-source\">");
-                    out.println("          <img class=\"source-image\" src=\"" + logoUrl + "\">");
-                    out.println("          <div class=\"source-name\">" + sourceName);
-                    out.println("          </div>");
-                    out.println("      </div>");
-                    out.println("   </div>");
-                    out.println("   <a href=\"" + art.getUrl() + "\" target=\"_blank\">");
-                    out.println("       <div class=\"news-image\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
-                    out.println("       </div>");
-                    out.println("       <div class=\"news-title\">" + art.getTitle());
-                    out.println("       </div>");
-                    out.println("   </a>");
-                    if(art.getDescription() != null && !art.getDescription().isEmpty()) {
+        for (NewsArticle art : articles) {
+            NewsSource source = new NewsSourceService().findSourceWithSourceId(art.getSourceId());
+            String logoUrl = source.getLogoUrl();
+            String sourceName = source.getName();
+            if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null && !logoUrl.isEmpty()) {
+                if (view == null || view.equals("grid")) {
+                    out.println("<div class=\"summary grid\">");
+                } 
+                else if(view.equals("list")){
+                    out.println("<div class=\"summary list\">");
+                }
+                out.println("   <div class=\"news-copyright\">");
+                out.println("      <div class=\"news-source\">");
+                out.println("          <img class=\"source-image\" src=\"" + logoUrl + "\">");
+                out.println("          <div class=\"source-name\">" + sourceName);
+                out.println("          </div>");
+                out.println("      </div>");
+                out.println("   </div>");
+                out.println("   <div class=\"news-image\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
+                out.println("   </div>");
+                out.println("   <a href=\"" + art.getUrl() + "\" target=\"_blank\">");
+                out.println("       <div class=\"news-title\">" + art.getTitle());
+                out.println("       </div>");
+                out.println("   </a>");
+                if(art.getDescription() != null && !art.getDescription().isEmpty()) {
                     out.println("   <div class=\"news-description\">" + art.getDescription());
                     out.println("   </div>");
-                    }
-                    out.println("</div>");
                 }
-            }
-        }
-        else {
-            for (NewsArticle art : articles) {
-                String logoUrl = new NewsSourceService().findSourceWithSourceId(art.getSourceId()).getLogoUrl();
-                if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null) {
-                    out.println("<a href=\"" + art.getUrl() + "\" target=\"_blank\">");
-                    out.println("   <div class=\"summary\">");
-                    out.println("       <figure class=\"count-circle\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
-                    out.println("           <figcaption> <img class=\"source-img\" src=\"" + logoUrl + "\"><div>" + art.getTitle() + "</div></figcaption>");
-                    out.println("       </figure>");
-                    out.println("       <p>" + art.getDescription() + "</p>");
-                    out.println("   </div>");
-                    out.println("</a>");
-                }
+                out.println("</div>");
             }
         }
     %>
