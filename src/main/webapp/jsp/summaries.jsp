@@ -66,7 +66,7 @@
             NewsSource source = new NewsSourceService().findSourceWithSourceId(art.getSourceId());
             String logoUrl = source.getLogoUrl();
             String sourceName = source.getName();
-            SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.YY, hh\'h\'mm");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("EE, dd.MM.YY, HH\'h\'mm");
             if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null && !logoUrl.isEmpty()) {
                 if (view == null || view.equals("grid")) {
                     out.println("<div class=\"summary grid\" onClick=showDetailPage(" + art.getId() + ", " + art.getUrl() + ")>");
