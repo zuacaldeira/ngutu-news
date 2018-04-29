@@ -33,7 +33,7 @@
         <!-- MAIN CONTENT -->
         <main class="container-fluid">
             <%@include file="jsp/jumbotron.jsp"%>
-            <%@include file="jsp/summaries.jsp" %>
+            <!--%@include file="jsp/summaries.jsp" %-->
         </main>
 
         <!-- FOOTER -->

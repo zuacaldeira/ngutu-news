@@ -4,6 +4,7 @@
     Author     : zua
 --%>
 
+<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="db.news.NewsSource"%>
 <%@page import="backend.services.news.NewsSourceService"%>
 <%@page import="backend.utils.MyDateUtils"%>
@@ -46,6 +47,8 @@
     <div class="actions">
         <% 
             String view = request.getParameter("view");
+            /*  String path = request.getQueryString();
+            out.println("<p>Path::" + path + "::</p>");*/
             if (view == null || view.equals("grid")) {
                 out.println("<a href=\"index.jsp?view=grid\"><span class=\"glyphicon glyphicon-th active\"></span></a>");        
                 out.println("<a href=\"index.jsp?view=list\"><span class=\"glyphicon glyphicon-th-list\"></span></a>");        
@@ -63,30 +66,31 @@
             NewsSource source = new NewsSourceService().findSourceWithSourceId(art.getSourceId());
             String logoUrl = source.getLogoUrl();
             String sourceName = source.getName();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.YY, hh\'h\'mm");
             if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null && !logoUrl.isEmpty()) {
                 if (view == null || view.equals("grid")) {
-                    out.println("<div class=\"summary grid\">");
+                    out.println("<div class=\"summary grid\" onClick=showDetailPage(" + art.getId() + ", " + art.getUrl() + ")>");
                 } 
                 else if(view.equals("list")){
-                    out.println("<div class=\"summary list\">");
+                    out.println("<div class=\"summary list\" onClick=showDetailPage(" + art.getId() + ", " + art.getUrl() + ")>");
                 }
                 out.println("   <div class=\"news-copyright\">");
                 out.println("      <div class=\"news-source\">");
                 out.println("          <img class=\"source-image\" src=\"" + logoUrl + "\">");
-                out.println("          <div class=\"source-name\">" + sourceName);
-                out.println("          </div>");
+                out.println("          <div class=\"source-name\">" + sourceName + "</div>");
+                out.println("          <div class=\"publish-date\">" + dateFormat.format(art.getPublishedAt()) + "</div>");
                 out.println("      </div>");
                 out.println("   </div>");
+                out.println("   <a href=\"" + art.getUrl() + "\" target=\"_blank\">");
                 out.println("   <div class=\"news-image\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
                 out.println("   </div>");
-                out.println("   <a href=\"" + art.getUrl() + "\" target=\"_blank\">");
                 out.println("       <div class=\"news-title\">" + art.getTitle());
                 out.println("       </div>");
-                out.println("   </a>");
                 if(art.getDescription() != null && !art.getDescription().isEmpty()) {
                     out.println("   <div class=\"news-description\">" + art.getDescription());
                     out.println("   </div>");
                 }
+                out.println("   </a>");
                 out.println("</div>");
             }
         }

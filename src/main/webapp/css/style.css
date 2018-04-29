@@ -238,6 +238,16 @@ main {
     float: left;
 }
 
+.summary .news-source .publish-date {
+    height: 3em;
+    line-height: 3em;
+    padding: .6em .5em 0 .2em;
+    margin: 0em;
+    float: right;
+    color: #777;
+    font-size: 0.75em;
+}
+
 .summary.grid .news-image {
     width: 100%;
     height: 10em;
