@@ -91,12 +91,6 @@
                                      <version>8.5.27.0</version>
                                      <destFileName>webapp-runner.jar</destFileName>
                                  </artifactItem>
-                                 <artifactItem>
-                                     <groupId>com.github.zuacaldeira</groupId>
-                                     <artifactId>flex-crawlers</artifactId>
-                                     <version>${flex.crawlers.version}</version>
-                                     <destFileName>flex-crawlers.jar</destFileName>
-                                 </artifactItem>
                              </artifactItems>
                          </configuration>
                      </execution>
