@@ -99,7 +99,7 @@
             <basedir>lib</basedir>
             <programs>
                 <program>
-                    <mainClass>main.Main</mainClass>
+                    <mainClass>Main</mainClass>
                     <name>worker</name>
                 </program>
             </programs>
