@@ -11,7 +11,7 @@
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <flex.crawlers.version>1.10</flex.crawlers.version>
+        <flex.crawlers.version>1.11</flex.crawlers.version>
     </properties>
     
     <dependencies>
