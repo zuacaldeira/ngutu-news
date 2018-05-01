@@ -1,5 +1,5 @@
 web:    java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
 
-worker: sh target/bin/worker
+worker:    java $JAVA_OPTS -cp lib/flex-crawlers main.Main
 
  
