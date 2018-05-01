@@ -26,6 +26,11 @@
             <artifactId>flex-app-backend</artifactId>
             <version>1.1.37</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.zuacaldeira</groupId>
+            <artifactId>flex-crawlers</artifactId>
+            <version>${flex.crawlers.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
