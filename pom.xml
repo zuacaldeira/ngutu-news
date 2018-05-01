@@ -25,6 +25,11 @@
             <artifactId>flex-app-backend</artifactId>
             <version>1.1.37</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.zuacaldeira</groupId>
+            <artifactId>flex-crawlers</artifactId>
+            <version>1.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -85,12 +90,12 @@
                                      <version>8.5.27.0</version>
                                      <destFileName>webapp-runner.jar</destFileName>
                                  </artifactItem>
-                                 <artifactItem>
+                                 <!--artifactItem>
                                      <groupId>com.github.zuacaldeira</groupId>
                                      <artifactId>flex-crawlers</artifactId>
                                      <version>1.2</version>
                                      <destFileName>flex-crawlers.jar</destFileName>
-                                 </artifactItem>
+                                 </artifactItem-->
                              </artifactItems>
                          </configuration>
                      </execution>
