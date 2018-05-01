@@ -102,7 +102,6 @@
                     <name>worker</name>
                 </program>
             </programs>
-            <basedir>lib/flex-crawlers/src/main/java</basedir>
           </configuration>
           <executions>
               <execution>
