@@ -1,0 +1,3 @@
+[submodule "lib/flex-crawlers"]
+	path = lib/flex-crawlers
+	url = https://github.com/zuacaldeira/flex-crawlers

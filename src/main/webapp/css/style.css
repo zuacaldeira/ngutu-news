@@ -207,6 +207,10 @@ main {
     background: white;
 }
 
+.summary:hover {
+    font-weight: bold;
+}
+
 .summary.list{
     height: auto;
 }
@@ -298,6 +302,10 @@ main {
     padding-top: 1em;
     color: #777;
     font-size: .75em;
+}
+
+.summary a {
+    text-decoration: none;
 }
 
 
