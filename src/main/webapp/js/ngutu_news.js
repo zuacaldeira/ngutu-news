@@ -11,10 +11,14 @@
  *  sourceId:   Id of a news source
  *  articleId:  Id of an article
  */
-function showDetailPage(articleId, articleUrl) {
-    alert("SHOW_DETAIL_PAGE for article " + articleId + " with url " + articleUrl);
-    window.open(articleUrl);
-    // var targetUrl = 'detail.jsp'+ "?articleId=" + articleId;
-    // TODO: Schould call on targetUrl instead
-    // window.open(targetUrl);
+
+function showDetailPage() {
+    var n = arguments.length;
+    if (n === 1) {
+        var id = arguments[0];
+        var message = "\tId = " + id + "\n";
+        var targetUrl = 'detail.jsp' + "?article=" + id;
+        alert(message + "\n\tPreparing call... " + targetUrl);
+        window.open(targetUrl);
+    }
 }

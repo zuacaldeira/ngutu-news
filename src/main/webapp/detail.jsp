@@ -1,11 +1,4 @@
-<%@page import="java.util.Enumeration"%>
-<%@page import="db.news.NewsArticle"%>
-<%@page import="backend.services.news.NewsArticleService"%>
-<%@page import="backend.utils.MyDateUtils"%>
-<%@page import="java.util.TreeSet"%>
-<%@page import="backend.services.news.NewsSourceService"%>
-<%@page import="backend.services.news.NewsAuthorService"%>
-<%@page import="backend.services.news.StatsService"%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 
@@ -33,7 +26,7 @@
         <!-- MAIN CONTENT -->
         <main class="container-fluid">
             <%@include file="jsp/jumbotron.jsp"%>
-            <!--%@include file="jsp/summaries.jsp" %-->
+            <%@include file="jsp/article-detail.jsp" %>
         </main>
 
         <!-- FOOTER -->

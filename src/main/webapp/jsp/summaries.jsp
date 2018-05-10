@@ -4,6 +4,7 @@
     Author     : zua
 --%>
 
+<%@page import="java.net.URLEncoder"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="db.news.NewsSource"%>
 <%@page import="backend.services.news.NewsSourceService"%>
@@ -61,6 +62,9 @@
     </div>
 </div>
 <div class="summaries">
+    <div class="test" onclick="showDetailPage('1', '2', '3');">
+        <p>TEST CLICKABLE ELEMENT</p>
+    </div>
     <%
         for (NewsArticle art : articles) {
             NewsSource source = new NewsSourceService().findSourceWithSourceId(art.getSourceId());
@@ -68,11 +72,14 @@
             String sourceName = source.getName();
             SimpleDateFormat dateFormat = new SimpleDateFormat("EE, dd.MM.YY, HH\'h\'mm");
             if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null && !logoUrl.isEmpty()) {
+                
+                long functionArguments = art.getId();
+                
                 if (view == null || view.equals("grid")) {
-                    out.println("<div class=\"summary grid\" onClick=showDetailPage(" + art.getId() + ", " + art.getUrl() + ")>");
+                    out.println("<div class=\"summary grid\" onclick=\"showDetailPage(" + functionArguments + ");\">");
                 } 
                 else if(view.equals("list")){
-                    out.println("<div class=\"summary list\" onClick=showDetailPage(" + art.getId() + ", " + art.getUrl() + ")>");
+                    out.println("<div class=\"summary list\" onclick=showDetailPage();>");
                 }
                 out.println("   <div class=\"news-copyright\">");
                 out.println("      <div class=\"news-source\">");

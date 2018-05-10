@@ -24,12 +24,7 @@
         <dependency>
             <groupId>com.github.zuacaldeira</groupId>
             <artifactId>flex-app-backend</artifactId>
-            <version>1.1.37</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.zuacaldeira</groupId>
-            <artifactId>flex-crawlers</artifactId>
-            <version>${flex.crawlers.version}</version>
+            <version>1.1.38</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -100,13 +95,13 @@
                              </artifactItems>
                          </configuration>
                      </execution>
-                    <execution>
+                    <!--execution>
                         <id>copy-dependencies</id>
                         <phase>package</phase>
                         <goals>
                             <goal>copy-dependencies</goal>
                         </goals>
-                    </execution>                     
+                    </execution-->                     
                 </executions>
             </plugin>
         </plugins>
