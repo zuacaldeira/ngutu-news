@@ -21,8 +21,8 @@
 
 @media screen and (min-width: 901px)  and (max-width: 1400px) {
     .summary.grid {
-        width: 33%;
-        margin-right: .5%;
+        width: 32.5%;
+        margin-right: 1.25%;
     }
     
     .summary.grid:nth-child(3n+0) {
@@ -30,8 +30,8 @@
     }
 
     .summary.list {
-        width: 49.75%;
-        margin-right: .5%;
+        width: 49%;
+        margin-right: 2%;
     }
     
     .summary.list:nth-child(2n+0) {
@@ -42,8 +42,8 @@
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .summary.grid  {
-        width: 49.5%;
-        margin-right: 1%;
+        width: 49%;
+        margin-right: 2%;
     }
     
     .summary.grid:nth-child(2n+0) {

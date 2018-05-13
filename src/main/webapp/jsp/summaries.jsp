@@ -61,10 +61,7 @@
         %>
     </div>
 </div>
-<div class="summaries">
-    <div class="test" onclick="showDetailPage('1', '2', '3');">
-        <p>TEST CLICKABLE ELEMENT</p>
-    </div>
+<div class="summaries clearfix">
     <%
         for (NewsArticle art : articles) {
             NewsSource source = new NewsSourceService().findSourceWithSourceId(art.getSourceId());
@@ -73,32 +70,30 @@
             SimpleDateFormat dateFormat = new SimpleDateFormat("EE, dd.MM.YY, HH\'h\'mm");
             if (art.getImageUrl() != null && !art.getImageUrl().isEmpty() && logoUrl != null && !logoUrl.isEmpty()) {
                 
-                long functionArguments = art.getId();
-                
                 if (view == null || view.equals("grid")) {
-                    out.println("<div class=\"summary grid\" onclick=\"showDetailPage(" + functionArguments + ");\">");
+                    out.println("<div class=\"summary grid\" >");
                 } 
                 else if(view.equals("list")){
-                    out.println("<div class=\"summary list\" onclick=showDetailPage();>");
-                }
-                out.println("   <div class=\"news-copyright\">");
-                out.println("      <div class=\"news-source\">");
-                out.println("          <img class=\"source-image\" src=\"" + logoUrl + "\">");
-                out.println("          <div class=\"source-name\">" + sourceName + "</div>");
-                out.println("          <div class=\"publish-date\">" + dateFormat.format(art.getPublishedAt()) + "</div>");
+                    out.println("<div class=\"summary list\" >");
+                }                
+                out.println("       <div class=\"news-copyright\">");
+                out.println("         <div class=\"news-source\">");
+                out.println("             <img class=\"source-image\" src=\"" + logoUrl + "\">");
+                out.println("             <div class=\"source-name\">" + sourceName + "</div>");
+                out.println("             <div class=\"publish-date\">" + dateFormat.format(art.getPublishedAt()) + "</div>");
+                out.println("         </div>");
                 out.println("      </div>");
-                out.println("   </div>");
-                out.println("   <a href=\"" + art.getUrl() + "\" target=\"_blank\">");
-                out.println("   <div class=\"news-image\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
-                out.println("   </div>");
-                out.println("       <div class=\"news-title\">" + art.getTitle());
-                out.println("       </div>");
+                out.println("      <div class=\"news-image\" style=\"background:url(" + art.getImageUrl() + ") no-repeat center center; background-size:cover;\">");
+                out.println("      </div>");
+                out.println("      <div class=\"news-title\">" + art.getTitle());
+                out.println("         <a href=\"" + art.getUrl() + "\" target=\"_blank\">");
+                out.println("         </a>");
+                out.println("      </div>");
                 if(art.getDescription() != null && !art.getDescription().isEmpty()) {
-                    out.println("   <div class=\"news-description\">" + art.getDescription());
-                    out.println("   </div>");
+                    out.println("  <p class=\"news-description\">" + art.getDescription());
+                    out.println("  </p>");
                 }
-                out.println("   </a>");
-                out.println("</div>");
+                out.println("   </div>");
             }
         }
     %>
