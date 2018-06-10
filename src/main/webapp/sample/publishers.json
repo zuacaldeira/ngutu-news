@@ -1,0 +1,1394 @@
+[
+    {
+        "id": 50041,
+        "country": "AO",
+        "language": "pt",
+        "logoUrl": "https://pbs.twimg.com/profile_images/854810761859936257/_FmCY3RJ_400x400.jpg",
+        "name": "Correio Angolense",
+        "sourceId": "correio-angolense",
+        "url": "https://www.correioangolense.com/"
+    },
+    {
+        "id": 50075,
+        "country": "ZA",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/941569804137385989/m_1r5MV6_400x400.jpg",
+        "name": "IOL South Africa",
+        "sourceId": "iol-news-za",
+        "url": "https://www.iol.co.za/"
+    },
+    {
+        "id": 50169,
+        "country": "AO",
+        "language": "pt",
+        "logoUrl": "https://pbs.twimg.com/profile_images/894282213495382017/W7pj7SsU_400x400.jpg",
+        "name": "Jornal de Angola",
+        "sourceId": "jornal-de-angola",
+        "url": "http://jornaldeangola.sapo.ao/"
+    },
+    {
+        "id": 50220,
+        "country": "AO",
+        "language": "pt",
+        "logoUrl": "https://pbs.twimg.com/profile_images/2548591418/portal5_400x400.jpg",
+        "name": "Angop",
+        "sourceId": "angop",
+        "url": "http://www.angop.ao/"
+    },
+    {
+        "id": 50235,
+        "country": "AO",
+        "language": "pt",
+        "logoUrl": "https://pbs.twimg.com/profile_images/1553392423/angonoticias_og_400x400.jpg",
+        "name": "Angonoticias",
+        "sourceId": "angonoticias",
+        "url": "http://www.angonoticias.com/"
+    },
+    {
+        "id": 50335,
+        "country": "AO",
+        "language": "pt",
+        "logoUrl": "https://pbs.twimg.com/profile_images/465810431387246594/aTgnnt5H_400x400.png",
+        "name": "Folha 8",
+        "sourceId": "folha8",
+        "url": "http://jornalf8.net/"
+    },
+    {
+        "id": 50371,
+        "country": "AO",
+        "language": "pt",
+        "logoUrl": "https://pbs.twimg.com/profile_images/378800000249630847/8c676e9beb38644915c92e904050145a_400x400.jpeg",
+        "name": "Novo Jornal",
+        "sourceId": "novo-jornal",
+        "url": "http://novojornal.co.ao/"
+    },
+    {
+        "id": 50431,
+        "country": "us",
+        "description": "Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/877547979363758080/ny06RNTT_400x400.jpg",
+        "name": "ABC News",
+        "sourceId": "abc-news",
+        "url": "http://abcnews.go.com"
+    },
+    {
+        "id": 50438,
+        "country": "au",
+        "description": "Australia's most trusted source of local, national and world news. Comprehensive, independent, in-depth analysis, the latest business, sport, weather and more.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/851166911245107200/4xsqBmY5_400x400.jpg",
+        "name": "ABC News (AU)",
+        "sourceId": "abc-news-au",
+        "url": "http://www.abc.net.au/news"
+    },
+    {
+        "id": 50463,
+        "country": "no",
+        "description": "Norges ledende nettavis med alltid oppdaterte nyheter innenfor innenriks, utenriks, sport og kultur.",
+        "language": "no",
+        "logoUrl": "https://pbs.twimg.com/profile_images/529260466657169408/o_fYiMaZ_400x400.jpeg",
+        "name": "Aftenposten",
+        "sourceId": "aftenposten",
+        "url": "https://www.aftenposten.no"
+    },
+    {
+        "id": 50466,
+        "country": "us",
+        "description": "News, analysis from the Middle East and worldwide, multimedia and interactives, opinions, documentaries, podcasts, long reads and broadcast schedule.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875638617606987776/YBOKib96_400x400.jpg",
+        "name": "Al Jazeera English",
+        "sourceId": "al-jazeera-english",
+        "url": "http://www.aljazeera.com"
+    },
+    {
+        "id": 50493,
+        "country": "it",
+        "description": "Agenzia ANSA: ultime notizie, foto, video e approfondimenti su: cronaca, politica, economia, regioni, mondo, sport, calcio, cultura e tecnologia.",
+        "language": "it",
+        "logoUrl": "https://pbs.twimg.com/profile_images/563351169460752384/VK18pD2I_400x400.png",
+        "name": "ANSA.it",
+        "sourceId": "ansa",
+        "url": "http://www.ansa.it"
+    },
+    {
+        "id": 50496,
+        "country": "sa",
+        "description": "ارقام موقع متخصص في متابعة سوق الأسهم السعودي تداول - تاسي - مع تغطيه معمقة لشركات واسعار ومنتجات البتروكيماويات , تقارير مالية الاكتتابات الجديده ",
+        "language": "ar",
+        "logoUrl": "https://pbs.twimg.com/profile_images/867613052925071360/tpHot1zu_400x400.jpg",
+        "name": "Argaam",
+        "sourceId": "argaam",
+        "url": "http://www.argaam.com"
+    },
+    {
+        "id": 50500,
+        "country": "us",
+        "description": "The PC enthusiast's resource. Power users and the tools they love, without computing religion.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/2215576731/ars-logo_400x400.png",
+        "name": "Ars Technica",
+        "sourceId": "ars-technica",
+        "url": "http://arstechnica.com"
+    },
+    {
+        "id": 50534,
+        "country": "pk",
+        "description": "ARY News is a Pakistani news channel committed to bring you up-to-the minute Pakistan news and featured stories from around Pakistan and all over the world.",
+        "language": "ud",
+        "logoUrl": "https://pbs.twimg.com/profile_images/914757678462881792/5Xng-KWa_400x400.jpg",
+        "name": "Ary News",
+        "sourceId": "ary-news",
+        "url": "https://arynews.tv/ud/"
+    },
+    {
+        "id": 50543,
+        "country": "us",
+        "description": "The AP delivers in-depth coverage on the international, politics, lifestyle, business, and entertainment news.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/461964160838803457/8z9FImcv_400x400.png",
+        "name": "Associated Press",
+        "sourceId": "associated-press",
+        "url": "https://apnews.com/"
+    },
+    {
+        "id": 50560,
+        "country": "au",
+        "description": "The Australian Financial Review reports the latest news from business, finance, investment and politics, updated in real time. It has a reputation for independent, award-winning journalism and is essential reading for the business and investor community.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/818701236086018050/SlypZOjt_400x400.jpg",
+        "name": "Australian Financial Review",
+        "sourceId": "australian-financial-review",
+        "url": "http://www.afr.com"
+    },
+    {
+        "id": 52394,
+        "country": "gb",
+        "description": "Use BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and UK news as well as local and regional perspectives. Also entertainment, business, science, technology and health news.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875702547016802304/9TC6qsAT_400x400.jpg",
+        "name": "BBC News",
+        "sourceId": "bbc-news",
+        "url": "http://www.bbc.co.uk/news"
+    },
+    {
+        "id": 52401,
+        "country": "gb",
+        "description": "The home of BBC Sport online. Includes live sports coverage, breaking news, results, video, audio and analysis on Football, F1, Cricket, Rugby Union, Rugby League, Golf, Tennis and all the main world sports, plus major events such as the Olympic Games.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/968086146180886528/P_nvzGw__400x400.jpg",
+        "name": "BBC Sport",
+        "sourceId": "bbc-sport",
+        "url": "http://www.bbc.co.uk/sport"
+    },
+    {
+        "id": 52404,
+        "country": "de",
+        "description": "Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, Sport, und Promis.",
+        "language": "de",
+        "logoUrl": "https://pbs.twimg.com/profile_images/916254721274515458/72vChEJI_400x400.jpg",
+        "name": "Bild",
+        "sourceId": "bild",
+        "url": "http://www.bild.de"
+    },
+    {
+        "id": 52423,
+        "country": "br",
+        "description": "Descubra a seção brasileira da Blasting News, a primeira revista feita pelo  público, com notícias globais e vídeos independentes. Junte-se a nós e torne- se um repórter.",
+        "language": "pt",
+        "logoUrl": "https://pbs.twimg.com/profile_images/874179276874166272/055eiNEY_400x400.jpg",
+        "name": "Blasting News (BR)",
+        "sourceId": "blasting-news-br",
+        "url": "http://br.blastingnews.com"
+    },
+    {
+        "id": 52426,
+        "country": "us",
+        "description": "Sports journalists and bloggers covering NFL, MLB, NBA, NHL, MMA, college football and basketball, NASCAR, fantasy sports and more. News, photos, mock drafts, game scores, player profiles and more!",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/854430488777379840/zFdLhwbT_400x400.jpg",
+        "name": "Bleacher Report",
+        "sourceId": "bleacher-report",
+        "url": "http://www.bleacherreport.com"
+    },
+    {
+        "id": 52447,
+        "country": "us",
+        "description": "Bloomberg delivers business and markets news, data, analysis, and video to the world, featuring stories from Businessweek and Bloomberg News.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875701863957630977/KTviCCaU_400x400.jpg",
+        "name": "Bloomberg",
+        "sourceId": "bloomberg",
+        "url": "http://www.bloomberg.com"
+    },
+    {
+        "id": 52480,
+        "country": "us",
+        "description": "Syndicated news and opinion website providing continuously updated headlines to top news and analysis sources.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/649329146221297665/5UgMNCwA_400x400.jpg",
+        "name": "Breitbart News",
+        "sourceId": "breitbart-news",
+        "url": "http://www.breitbart.com"
+    },
+    {
+        "id": 52509,
+        "country": "us",
+        "description": "Business Insider is a fast-growing business site with deep financial, media, tech, and other industry verticals. Launched in 2007, the site is now the largest business news site on the web.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/887662979902304257/azSzxYkB_400x400.jpg",
+        "name": "Business Insider",
+        "sourceId": "business-insider",
+        "url": "http://www.businessinsider.com"
+    },
+    {
+        "id": 52548,
+        "country": "gb",
+        "description": "Business Insider is a fast-growing business site with deep financial, media, tech, and other industry verticals. Launched in 2007, the site is now the largest business news site on the web.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/890152475067650048/6MuA0NTT_400x400.jpg",
+        "name": "Business Insider (UK)",
+        "sourceId": "business-insider-uk",
+        "url": "http://uk.businessinsider.com"
+    },
+    {
+        "id": 52549,
+        "country": "us",
+        "description": "BuzzFeed is a cross-platform, global network for news and entertainment that generates seven billion views each month.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/796353157576138752/H2xr-NkC_400x400.jpg",
+        "name": "Buzzfeed",
+        "sourceId": "buzzfeed",
+        "url": "https://www.buzzfeed.com"
+    },
+    {
+        "id": 52591,
+        "country": "ca",
+        "description": "CBC News is the division of the Canadian Broadcasting Corporation responsible for the news gathering and production of news programs on the corporation's English-language operations, namely CBC Television, CBC Radio, CBC News Network, and CBC.ca.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/957919598749323264/NuYdCE6a_400x400.jpg",
+        "name": "CBC News",
+        "sourceId": "cbc-news",
+        "url": "http://www.cbc.ca/news"
+    },
+    {
+        "id": 52613,
+        "country": "us",
+        "description": "CBS News: dedicated to providing the best in journalism under standards it pioneered at the dawn of radio and television and continue in the digital age.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/645966750941626368/d0Q4voGK_400x400.jpg",
+        "name": "CBS News",
+        "sourceId": "cbs-news",
+        "url": "http://www.cbsnews.com"
+    },
+    {
+        "id": 52624,
+        "country": "us",
+        "description": "Get latest business news on stock markets, financial & earnings on CNBC. View world markets streaming charts & video; check stock tickers and quotes.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875399584477962241/CsazvyAF_400x400.jpg",
+        "name": "CNBC",
+        "sourceId": "cnbc",
+        "url": "http://www.cnbc.com"
+    },
+    {
+        "id": 52662,
+        "country": "us",
+        "description": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/508960761826131968/LnvhR8ED_400x400.png",
+        "name": "CNN",
+        "sourceId": "cnn",
+        "url": "http://us.cnn.com"
+    },
+    {
+        "id": 52699,
+        "country": "us",
+        "description": "Lee las últimas noticias e información sobre Latinoamérica, Estados Unidos, mundo, entretenimiento, política, salud, tecnología y deportes en CNNEspañol.com.",
+        "language": "es",
+        "logoUrl": "https://pbs.twimg.com/profile_images/589795319216504832/6a71ZHkx_400x400.jpg",
+        "name": "CNN Spanish",
+        "sourceId": "cnn-es",
+        "url": "http://cnnespanol.cnn.com/"
+    },
+    {
+        "id": 52701,
+        "country": "us",
+        "description": "Providing breaking cryptocurrency news - focusing on Bitcoin, Ethereum, ICOs, blockchain technology, and smart contracts.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/942304759561768960/Gel04P4M_400x400.jpg",
+        "name": "Crypto Coins News",
+        "sourceId": "crypto-coins-news",
+        "url": "https://www.ccn.com"
+    },
+    {
+        "id": 52722,
+        "country": "gb",
+        "description": "All the latest news, sport, showbiz, science and health stories from around the world from the Daily Mail and Mail on Sunday newspapers.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/930087648202575872/q4pq9RGV_400x400.jpg",
+        "name": "Daily Mail",
+        "sourceId": "daily-mail",
+        "url": "http://www.dailymail.co.uk/home/index.html"
+    },
+    {
+        "id": 52743,
+        "country": "de",
+        "description": "Nachrichten, News und neueste Meldungen aus dem Inland und dem Ausland - aktuell präsentiert von tagesspiegel.de.",
+        "language": "de",
+        "logoUrl": "https://pbs.twimg.com/profile_images/455980930293702658/V0W08c8o_400x400.png",
+        "name": "Der Tagesspiegel",
+        "sourceId": "der-tagesspiegel",
+        "url": "http://www.tagesspiegel.de"
+    },
+    {
+        "id": 52777,
+        "country": "de",
+        "description": "Aktuelle Nachrichten, Kommentare, Analysen und Hintergrundberichte aus Politik, Wirtschaft, Gesellschaft, Wissen, Kultur und Sport lesen Sie auf ZEIT ONLINE.",
+        "language": "de",
+        "logoUrl": "https://pbs.twimg.com/profile_images/899901264942813184/_n5m0ro7_400x400.jpg",
+        "name": "Die Zeit",
+        "sourceId": "die-zeit",
+        "url": "http://www.zeit.de/index"
+    },
+    {
+        "id": 52816,
+        "country": "es",
+        "description": "Noticias, actualidad, álbumes, debates, sociedad, servicios, entretenimiento y última hora en España y el mundo.",
+        "language": "es",
+        "logoUrl": "https://pbs.twimg.com/profile_images/959947259780747265/ez18J78k_400x400.jpg",
+        "name": "El Mundo",
+        "sourceId": "el-mundo",
+        "url": "http://www.elmundo.es"
+    },
+    {
+        "id": 52847,
+        "country": "us",
+        "description": "Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/655059892022022144/Pq3Q_1oU_400x400.png",
+        "name": "Engadget",
+        "sourceId": "engadget",
+        "url": "https://www.engadget.com"
+    },
+    {
+        "id": 52872,
+        "country": "us",
+        "description": "Online version of the print magazine includes entertainment news, interviews, reviews of music, film, TV and books, and a special area for magazine subscribers.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/881539688418471937/lf5NWhm__400x400.jpg",
+        "name": "Entertainment Weekly",
+        "sourceId": "entertainment-weekly",
+        "url": "http://www.ew.com"
+    },
+    {
+        "id": 52897,
+        "country": "us",
+        "description": "ESPN has up-to-the-minute sports news coverage, scores, highlights and commentary for NFL, MLB, NBA, College Football, NCAA Basketball and more.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/903763131872288768/lR7-Fb1N_400x400.jpg",
+        "name": "ESPN",
+        "sourceId": "espn",
+        "url": "http://espn.go.com"
+    },
+    {
+        "id": 52898,
+        "country": "us",
+        "description": "ESPN Cricinfo provides the most comprehensive cricket coverage available including live ball-by-ball commentary, news, unparalleled statistics, quality editorial comment and analysis.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/888015358958940165/SmaHw6Rj_400x400.jpg",
+        "name": "ESPN Cric Info",
+        "sourceId": "espn-cric-info",
+        "url": "http://www.espncricinfo.com/"
+    },
+    {
+        "id": 52901,
+        "country": "ca",
+        "description": "Find the latest happenings in the Canadian Financial Sector and stay up to date with changing trends in Business Markets. Read trading and investing advice from professionals.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/877097420882034689/MTfB8m72_400x400.jpg",
+        "name": "Financial Post",
+        "sourceId": "financial-post",
+        "url": "http://business.financialpost.com"
+    },
+    {
+        "id": 52922,
+        "country": "gb",
+        "description": "The latest UK and international business, finance, economic and political news, comment and analysis from the Financial Times on FT.com.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/931161479398686721/FI3te2Sw_400x400.jpg",
+        "name": "Financial Times",
+        "sourceId": "financial-times",
+        "url": "http://www.ft.com/home/uk"
+    },
+    {
+        "id": 52931,
+        "country": "de",
+        "description": "Minutenaktuelle Nachrichten und Service-Informationen von Deutschlands modernem Nachrichtenmagazin.",
+        "language": "de",
+        "logoUrl": "https://pbs.twimg.com/profile_images/847373919468179456/Zrp-86HU_400x400.jpg",
+        "name": "Focus",
+        "sourceId": "focus",
+        "url": "http://www.focus.de"
+    },
+    {
+        "id": 52954,
+        "country": "it",
+        "description": "Italian football news, analysis, fixtures and results for the latest from Serie A, Serie B and the Azzurri.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/2514923001/kvc336eae86bjgy8ys1s_400x400.jpeg",
+        "name": "Football Italia",
+        "sourceId": "football-italia",
+        "url": "http://www.football-italia.net"
+    },
+    {
+        "id": 52957,
+        "country": "us",
+        "description": "Fortune 500 Daily and Breaking Business News",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875382047216467972/3119VjuE_400x400.jpg",
+        "name": "Fortune",
+        "sourceId": "fortune",
+        "url": "http://fortune.com"
+    },
+    {
+        "id": 52987,
+        "country": "us",
+        "description": "Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/918480715158716419/4X8oCbge_400x400.jpg",
+        "name": "Fox News",
+        "sourceId": "fox-news",
+        "url": "http://www.foxnews.com"
+    },
+    {
+        "id": 53001,
+        "country": "us",
+        "description": "Find live scores, player and team news, videos, rumors, stats, standings, schedules and fantasy games on FOX Sports.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/824007776489738241/pFk_8LLO_400x400.jpg",
+        "name": "Fox Sports",
+        "sourceId": "fox-sports",
+        "url": "http://www.foxsports.com"
+    },
+    {
+        "id": 53007,
+        "country": "br",
+        "description": "Só na globo.com você encontra tudo sobre o conteúdo e marcas do Grupo Globo. O melhor acervo de vídeos online sobre entretenimento, esportes e jornalismo do Brasil.",
+        "language": "pt",
+        "logoUrl": "https://pbs.twimg.com/profile_images/936279870488895488/15t1ZHho_400x400.jpg",
+        "name": "Globo",
+        "sourceId": "globo",
+        "url": "http://www.globo.com/"
+    },
+    {
+        "id": 53016,
+        "country": "us",
+        "description": "Comprehensive, up-to-date news coverage, aggregated from sources all over the world by Google News.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/1843856587/news_icon_big_400x400.png",
+        "name": "Google News",
+        "sourceId": "google-news",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53021,
+        "country": "ar",
+        "description": "Completa cobertura actualizada de noticias agregadas a partir de fuentes de todo el mundo por Google Noticias.",
+        "language": "es",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (Argentina)",
+        "sourceId": "google-news-ar",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53023,
+        "country": "au",
+        "description": "Comprehensive, up-to-date Australia news coverage, aggregated from sources all over the world by Google News.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (Australia)",
+        "sourceId": "google-news-au",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53025,
+        "country": "br",
+        "description": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
+        "language": "pt",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (Brasil)",
+        "sourceId": "google-news-br",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53027,
+        "country": "ca",
+        "description": "Comprehensive, up-to-date Canada news coverage, aggregated from sources all over the world by Google News.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (Canada)",
+        "sourceId": "google-news-ca",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53037,
+        "country": "fr",
+        "description": "Informations complètes et à jour, compilées par Google Actualités à partir de sources d&#39;actualités du monde entier.",
+        "language": "fr",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (France)",
+        "sourceId": "google-news-fr",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53039,
+        "country": "in",
+        "description": "Comprehensive, up-to-date India news coverage, aggregated from sources all over the world by Google News.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (India)",
+        "sourceId": "google-news-in",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53041,
+        "country": "is",
+        "description": "כיסוי מקיף ועדכני של חדשות שהצטברו ממקורות בכל העולם על ידי &#39;חדשות Google&#39;.",
+        "language": "he",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (Israel)",
+        "sourceId": "google-news-is",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53043,
+        "country": "it",
+        "description": "Copertura giornalistica completa e aggiornata ottenuta combinando fonti di notizie in tutto il mondo attraverso Google News.",
+        "language": "it",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (Italy)",
+        "sourceId": "google-news-it",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53045,
+        "country": "ru",
+        "description": "Исчерпывающая и актуальная информация, собранная службой &quot;Новости Google&quot; со всего света.",
+        "language": "ru",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (Russia)",
+        "sourceId": "google-news-ru",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53047,
+        "country": "sa",
+        "description": "تغطية شاملة ومتجددة للأخبار، تم جمعها من مصادر أخبار من جميع أنحاء العالم بواسطة أخبار Google.",
+        "language": "ar",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (Saudi Arabia)",
+        "sourceId": "google-news-sa",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53049,
+        "country": "gb",
+        "description": "Comprehensive, up-to-date UK news coverage, aggregated from sources all over the world by Google News.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/993911709357162496/NWRtL2J__400x400.jpg",
+        "name": "Google News (UK)",
+        "sourceId": "google-news-uk",
+        "url": "https://news.google.com"
+    },
+    {
+        "id": 53051,
+        "country": "de",
+        "description": "Online-Magazin für Startups und die digitale Wirtschaft. News und Hintergründe zu Investment, VC und Gründungen.",
+        "language": "de",
+        "logoUrl": "https://pbs.twimg.com/profile_images/941240896451997696/x5a6yojl_400x400.jpg",
+        "name": "Gruenderszene",
+        "sourceId": "gruenderszene",
+        "url": "http://www.gruenderszene.de"
+    },
+    {
+        "id": 53076,
+        "country": "us",
+        "description": "Hacker News is a social news website focusing on computer science and entrepreneurship. It is run by Paul Graham's investment fund and startup incubator, Y Combinator. In general, content that can be submitted is defined as \"anything that gratifies one's intellectual curiosity\".",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/469397708986269696/iUrYEOpJ_400x400.png",
+        "name": "Hacker News",
+        "sourceId": "hacker-news",
+        "url": "https://news.ycombinator.com"
+    },
+    {
+        "id": 53095,
+        "country": "de",
+        "description": "Auf Handelsblatt lesen sie Nachrichten über Unternehmen, Finanzen, Politik und Technik. Verwalten Sie Ihre Finanzanlagen mit Hilfe unserer Börsenkurse.",
+        "language": "de",
+        "logoUrl": "https://pbs.twimg.com/profile_images/864850500088455169/RhrXxWdw_400x400.jpg",
+        "name": "Handelsblatt",
+        "sourceId": "handelsblatt",
+        "url": "http://www.handelsblatt.com"
+    },
+    {
+        "id": 53100,
+        "country": "us",
+        "description": "IGN is your site for Xbox One, PS4, PC, Wii-U, Xbox 360, PS3, Wii, 3DS, PS Vita and iPhone games with expert reviews, news, previews, trailers, cheat codes, wiki guides and walkthroughs.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/865351828111675393/It7GIxXW_400x400.jpg",
+        "name": "IGN",
+        "sourceId": "ign",
+        "url": "http://www.ign.com"
+    },
+    {
+        "id": 53123,
+        "country": "it",
+        "description": "Notizie di economia, cronaca italiana ed estera, quotazioni borsa in tempo reale e di finanza, norme e tributi, fondi e obbligazioni, mutui, prestiti e lavoro a cura de Il Sole 24 Ore.",
+        "language": "it",
+        "logoUrl": "https://pbs.twimg.com/profile_images/907573891240996864/Dt0vL4al_400x400.jpg",
+        "name": "Il Sole 24 Ore",
+        "sourceId": "il-sole-24-ore",
+        "url": "http://www.ilsole24ore.com"
+    },
+    {
+        "id": 53147,
+        "country": "gb",
+        "description": "National morning quality (tabloid) includes free online access to news and supplements. Insight by Robert Fisk and various other columnists.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/583628771972018176/ztJn926g_400x400.png",
+        "name": "Independent",
+        "sourceId": "independent",
+        "url": "http://www.independent.co.uk"
+    },
+    {
+        "id": 53184,
+        "country": "br",
+        "description": "No InfoMoney você encontra tudo o que precisa sobre dinheiro. Ações, investimentos, bolsas de valores e muito mais. Aqui você encontra informação que vale dinheiro!",
+        "language": "pt",
+        "logoUrl": "https://pbs.twimg.com/profile_images/2626842133/mf2dqgt82kcknejy7scv_400x400.jpeg",
+        "name": "InfoMoney",
+        "sourceId": "info-money",
+        "url": "http://www.infomoney.com.br"
+    },
+    {
+        "id": 53205,
+        "country": "ar",
+        "description": "Noticias de Argentina y del mundo en tiempo real. Información, videos y fotos sobre los hechos más relevantes y sus protagonistas. Léelo antes en infobae.",
+        "language": "es",
+        "logoUrl": "https://pbs.twimg.com/profile_images/989843885131206657/yvuwyAhg_400x400.jpg",
+        "name": "Infobae",
+        "sourceId": "infobae",
+        "url": "http://www.infobae.com/?noredirect"
+    },
+    {
+        "id": 53212,
+        "country": "ar",
+        "description": "El diario de Tucumán, noticias 24 horas online - San Miguel de Tucumán - Argentina - Ultimo momento - Ultimas noticias.",
+        "language": "es",
+        "logoUrl": "https://pbs.twimg.com/profile_images/890208177580593152/SQpRuBm8_400x400.jpg",
+        "name": "La Gaceta",
+        "sourceId": "la-gaceta",
+        "url": "http://www.lagaceta.com.ar"
+    },
+    {
+        "id": 53215,
+        "country": "ar",
+        "description": "Información confiable en Internet. Noticias de Argentina y del mundo - ¡Informate ya!",
+        "language": "es",
+        "logoUrl": "https://pbs.twimg.com/profile_images/644564299948625921/ddfxyyqL_400x400.png",
+        "name": "La Nacion",
+        "sourceId": "la-nacion",
+        "url": "http://www.lanacion.com.ar"
+    },
+    {
+        "id": 53220,
+        "country": "it",
+        "description": "Breaking News, Latest News and Current News from FOXNews.com. Breaking news and video. Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports.",
+        "language": "it",
+        "logoUrl": "https://pbs.twimg.com/profile_images/559420141771829248/9sDOqcXf_400x400.png",
+        "name": "La Repubblica",
+        "sourceId": "la-repubblica",
+        "url": "http://www.repubblica.it"
+    },
+    {
+        "id": 53225,
+        "country": "fr",
+        "description": "Les articles du journal et toute l'actualit&eacute; en continu : International, France, Soci&eacute;t&eacute;, Economie, Culture, Environnement, Blogs ...",
+        "language": "fr",
+        "logoUrl": "https://pbs.twimg.com/profile_images/817042499134980096/LTpqSDMM_400x400.jpg",
+        "name": "Le Monde",
+        "sourceId": "le-monde",
+        "url": "http://www.lemonde.fr"
+    },
+    {
+        "id": 53252,
+        "country": "ru",
+        "description": "Новости, статьи, фотографии, видео. Семь дней в неделю, 24 часа в сутки.",
+        "language": "ru",
+        "logoUrl": "https://pbs.twimg.com/profile_images/980506493475844101/-0h-6rWZ_400x400.jpg",
+        "name": "Lenta",
+        "sourceId": "lenta",
+        "url": "https://lenta.ru"
+    },
+    {
+        "id": 53255,
+        "country": "fr",
+        "description": "Le sport en direct sur L'EQUIPE.fr. Les informations, résultats et classements de tous les sports. Directs commentés, images et vidéos à regarder et à partager !",
+        "language": "fr",
+        "logoUrl": "https://pbs.twimg.com/profile_images/755312541363036160/fq4d1WN3_400x400.jpg",
+        "name": "L'equipe",
+        "sourceId": "lequipe",
+        "url": "https://www.lequipe.fr"
+    },
+    {
+        "id": 53258,
+        "country": "fr",
+        "description": "Toute l'actualité économique, financière et boursière française et internationale sur Les Echos.fr",
+        "language": "fr",
+        "logoUrl": "https://pbs.twimg.com/profile_images/917735975119441920/Otcve69W_400x400.jpg",
+        "name": "Les Echos",
+        "sourceId": "les-echos",
+        "url": "https://www.lesechos.fr"
+    },
+    {
+        "id": 53273,
+        "country": "fr",
+        "description": "Toute l'actualité en direct - photos et vidéos avec Libération",
+        "language": "fr",
+        "logoUrl": "https://pbs.twimg.com/profile_images/854315131395878912/jZceoVi9_400x400.jpg",
+        "name": "Libération",
+        "sourceId": "liberation",
+        "url": "http://www.liberation.fr"
+    },
+    {
+        "id": 53278,
+        "country": "es",
+        "description": "La mejor información deportiva en castellano actualizada minuto a minuto en noticias, vídeos, fotos, retransmisiones y resultados en directo.",
+        "language": "es",
+        "logoUrl": "https://pbs.twimg.com/profile_images/921140653270208513/3_3K2tJn_400x400.jpg",
+        "name": "Marca",
+        "sourceId": "marca",
+        "url": "http://www.marca.com"
+    },
+    {
+        "id": 53303,
+        "country": "us",
+        "description": "Mashable is a global, multi-platform media and entertainment company.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/941796662770651137/cDtLVz1j_400x400.jpg",
+        "name": "Mashable",
+        "sourceId": "mashable",
+        "url": "http://mashable.com"
+    },
+    {
+        "id": 53332,
+        "country": "us",
+        "description": "Medical news and health news headlines posted throughout the day, every day.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/846771226483671040/Q352DFzt_400x400.jpg",
+        "name": "Medical News Today",
+        "sourceId": "medical-news-today",
+        "url": "http://www.medicalnewstoday.com"
+    },
+    {
+        "id": 53358,
+        "country": "gb",
+        "description": "News, Sport, Showbiz, Celebrities from Metro - a free British newspaper.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/884322278699388928/lyQCp-0B_400x400.jpg",
+        "name": "Metro",
+        "sourceId": "metro",
+        "url": "http://metro.co.uk"
+    },
+    {
+        "id": 53389,
+        "country": "gb",
+        "description": "All the latest news, sport and celebrity gossip at Mirror.co.uk. Get all the big headlines, pictures, analysis, opinion and video on the stories that matter to you.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/798143742205186048/PpRgSwh0_400x400.jpg",
+        "name": "Mirror",
+        "sourceId": "mirror",
+        "url": "http://www.mirror.co.uk/"
+    },
+    {
+        "id": 53422,
+        "country": "us",
+        "description": "Breaking news and in-depth analysis of the headlines, as well as commentary and informed perspectives from The Rachel Maddow Show, Morning Joe & more.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/988382060443250689/DijesdNB_400x400.jpg",
+        "name": "MSNBC",
+        "sourceId": "msnbc",
+        "url": "http://www.msnbc.com"
+    },
+    {
+        "id": 53431,
+        "country": "us",
+        "description": "The ultimate news source for music, celebrity, entertainment, movies, and current events on the web. It's pop culture on steroids.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/871737880133197824/sGUD5ffo_400x400.jpg",
+        "name": "MTV News",
+        "sourceId": "mtv-news",
+        "url": "http://www.mtv.com/news"
+    },
+    {
+        "id": 53448,
+        "country": "gb",
+        "description": "All the latest celebrity news, gossip, exclusive interviews and pictures from the world of music and entertainment.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/1801520411/MTV_News_Logo_Black_400x400.png",
+        "name": "MTV News (UK)",
+        "sourceId": "mtv-news-uk",
+        "url": "http://www.mtv.co.uk/news"
+    },
+    {
+        "id": 53459,
+        "country": "us",
+        "description": "Reporting our world daily: original nature and science news from National Geographic.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/921336759979597825/VTSJ5mRt_400x400.jpg",
+        "name": "National Geographic",
+        "sourceId": "national-geographic",
+        "url": "http://news.nationalgeographic.com"
+    },
+    {
+        "id": 53485,
+        "country": "us",
+        "description": "National Review: Conservative News, Opinion, Politics, Policy, & Current Events.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/471722478822100992/slV_OilN_400x400.jpeg",
+        "name": "National Review",
+        "sourceId": "national-review",
+        "url": "https://www.nationalreview.com/"
+    },
+    {
+        "id": 53510,
+        "country": "us",
+        "description": "Breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875411730679173121/l9PSFLJb_400x400.jpg",
+        "name": "NBC News",
+        "sourceId": "nbc-news",
+        "url": "http://www.nbcnews.com"
+    },
+    {
+        "id": 53546,
+        "country": "us",
+        "description": "Breaking science and technology news from around the world. Exclusive stories and expert analysis on space, technology, health, physics, life and Earth.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/960860144329469953/Tc-GOIGJ_400x400.jpg",
+        "name": "New Scientist",
+        "sourceId": "new-scientist",
+        "url": "https://www.newscientist.com/section/news"
+    },
+    {
+        "id": 53548,
+        "country": "us",
+        "description": "NYMAG and New York magazine cover the new, the undiscovered, the next in politics, culture, food, fashion, and behavior nationally, through a New York lens.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/2939680330/56f025f0104892f84a84c00bdb4ec812_400x400.png",
+        "name": "New York Magazine",
+        "sourceId": "new-york-magazine",
+        "url": "http://nymag.com"
+    },
+    {
+        "id": 53571,
+        "country": "au",
+        "description": "We say what people are thinking and cover the issues that get people talking balancing Australian and global moments — from politics to pop culture.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/629244933057032192/zJsuwh_O_400x400.png",
+        "name": "News.com.au",
+        "sourceId": "news-com-au",
+        "url": "http://www.news.com.au"
+    },
+    {
+        "id": 53601,
+        "country": "za",
+        "description": "South Africa's premier news source, provides breaking news on national, world, Africa, sport, entertainment, technology and more.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875715923793072128/rLqRwylP_400x400.jpg",
+        "name": "News24",
+        "sourceId": "news24",
+        "url": "http://www.news24.com"
+    },
+    {
+        "id": 53604,
+        "country": "us",
+        "description": "Newsweek provides in-depth analysis, news and opinion about international issues, technology, business, culture and politics.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/741603495929905152/di0NxkFa_400x400.jpg",
+        "name": "Newsweek",
+        "sourceId": "newsweek",
+        "url": "http://www.newsweek.com"
+    },
+    {
+        "id": 53641,
+        "country": "us",
+        "description": "Coverage of science and technology that have the potential for disruption, and analysis of plans, policies, and technology that enable radical improvement.",
+        "language": "en",
+        "logoUrl": "https://www.nextbigfuture.com/wp-content/uploads/2017/04/1761eac3b1967fa6e4cafb6af110abcc.png?x71037",
+        "name": "Next Big Future",
+        "sourceId": "next-big-future",
+        "url": "https://www.nextbigfuture.com"
+    },
+    {
+        "id": 53644,
+        "country": "us",
+        "description": "The official source for NFL news, schedules, stats, scores and more.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/971061480497041416/bib7cPuh_400x400.jpg",
+        "name": "NFL News",
+        "sourceId": "nfl-news",
+        "url": "http://www.nfl.com/news"
+    },
+    {
+        "id": 53647,
+        "country": "us",
+        "description": "The most up-to-date breaking hockey news from the official source including interviews, rumors, statistics and schedules.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/136366459/bwpic_400x400.JPG",
+        "name": "NHL News",
+        "sourceId": "nhl-news",
+        "url": "https://www.nhl.com/news"
+    },
+    {
+        "id": 53668,
+        "country": "no",
+        "description": "NRK er Norges største tilbud på nett: nyheter fra Norge og verden, lokalnyheter, radio- og tv-program, podcast, vær, helse-, kultur-, underholdning-, humor- og debattstoff.",
+        "language": "no",
+        "logoUrl": "https://pbs.twimg.com/profile_images/687276797776510984/i-qUX8GW_400x400.png",
+        "name": "NRK",
+        "sourceId": "nrk",
+        "url": "https://www.nrk.no"
+    },
+    {
+        "id": 53683,
+        "country": "us",
+        "description": "Political news about Congress, the White House, campaigns, lobbyists and issues.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/677177503694237697/y6yTzWn6_400x400.png",
+        "name": "Politico",
+        "sourceId": "politico",
+        "url": "https://www.politico.com"
+    },
+    {
+        "id": 53714,
+        "country": "us",
+        "description": "Polygon is a gaming website in partnership with Vox Media. Our culture focused site covers games, their creators, the fans, trending stories and entertainment news.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/877267279523741696/rzCAYZLP_400x400.jpg",
+        "name": "Polygon",
+        "sourceId": "polygon",
+        "url": "http://www.polygon.com"
+    },
+    {
+        "id": 53747,
+        "country": "ru",
+        "description": "Главные новости политики, экономики и бизнеса, комментарии аналитиков, финансовые данные с российских и мировых биржевых систем на сайте rbc.ru.",
+        "language": "ru",
+        "logoUrl": "https://pbs.twimg.com/profile_images/1058357925/rbc_400x400.jpg",
+        "name": "RBC",
+        "sourceId": "rbc",
+        "url": "http://www.rbc.ru"
+    },
+    {
+        "id": 53768,
+        "country": "us",
+        "description": "Get the latest independent tech news, reviews and analysis from Recode with the most informed and respected journalists in technology and media.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/729365899828989952/o0AuZCNW_400x400.jpg",
+        "name": "Recode",
+        "sourceId": "recode",
+        "url": "http://www.recode.net"
+    },
+    {
+        "id": 53789,
+        "country": "us",
+        "description": "Reddit is an entertainment, social news networking service, and news website. Reddit's registered community members can submit content, such as text posts or direct links.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/868147475852312577/fjCSPU-a_400x400.jpg",
+        "name": "Reddit /r/all",
+        "sourceId": "reddit-r-all",
+        "url": "https://www.reddit.com/r/all"
+    },
+    {
+        "id": 53820,
+        "country": "us",
+        "description": "Reuters.com brings you the latest news from around the world, covering breaking news in business, politics, entertainment, technology, video and pictures.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/877554927932891136/ZBEs235N_400x400.jpg",
+        "name": "Reuters",
+        "sourceId": "reuters",
+        "url": "http://www.reuters.com"
+    },
+    {
+        "id": 53835,
+        "country": "ru",
+        "description": "Актуальная картина дня на RT: круглосуточное ежедневное обновление новостей политики, бизнеса, финансов, спорта, науки, культуры. Онлайн-репортажи с места событий. Комментарии экспертов, актуальные интервью, фото и видео репортажи.",
+        "language": "ru",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875388705258831872/H4_uLagc_400x400.jpg",
+        "name": "RT",
+        "sourceId": "rt",
+        "url": "https://russian.rt.com"
+    },
+    {
+        "id": 53843,
+        "country": "ie",
+        "description": "Get all of the latest breaking local and international news stories as they happen, with up to the minute updates and analysis, from Ireland's National Broadcaster.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/950690125780078592/mjXCvHGQ_400x400.jpg",
+        "name": "RTE",
+        "sourceId": "rte",
+        "url": "https://www.rte.ie/news"
+    },
+    {
+        "id": 53858,
+        "country": "nl",
+        "description": "Volg het nieuws terwijl het gebeurt. RTL Nieuws informeert haar lezers op een onafhankelijke, boeiende en toegankelijke wijze over belangrijke ontwikkelingen in eigen land en de rest van de wereld.",
+        "language": "nl",
+        "logoUrl": "https://pbs.twimg.com/profile_images/948470929163800576/8yYXeZbK_400x400.jpg",
+        "name": "RTL Nieuws",
+        "sourceId": "rtl-nieuws",
+        "url": "https://www.rtlnieuws.nl/"
+    },
+    {
+        "id": 53861,
+        "country": "sa",
+        "description": "صحيفة الكترونية سعودية هدفها السبق في نقل الحدث بمهنية ومصداقية خدمة للوطن والمواطن.",
+        "language": "ar",
+        "logoUrl": "https://pbs.twimg.com/profile_images/548154985884561408/C2ne5SdF_400x400.jpeg",
+        "name": "SABQ",
+        "sourceId": "sabq",
+        "url": "https://sabq.org"
+    },
+    {
+        "id": 53864,
+        "country": "de",
+        "description": "Deutschlands führende Nachrichtenseite. Alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr.",
+        "language": "de",
+        "logoUrl": "https://pbs.twimg.com/profile_images/881743612404518912/ALb4Fxzg_400x400.jpg",
+        "name": "Spiegel Online",
+        "sourceId": "spiegel-online",
+        "url": "http://www.spiegel.de"
+    },
+    {
+        "id": 53881,
+        "country": "se",
+        "description": "Sveriges ledande mediesajt - SvD.se. Svenska Dagbladets nyhetssajt låter läsarna ta plats och fördjupar nyheterna.",
+        "language": "se",
+        "logoUrl": "https://pbs.twimg.com/profile_images/847728246619725826/jeEROkK-_400x400.jpg",
+        "name": "Svenska Dagbladet",
+        "sourceId": "svenska-dagbladet",
+        "url": "https://www.svd.se"
+    },
+    {
+        "id": 53902,
+        "country": "de",
+        "description": "Das Online-Magazin bietet Artikel zu den Themen E-Business, Social Media, Startups und Webdesign.",
+        "language": "de",
+        "logoUrl": "https://pbs.twimg.com/profile_images/964072513679581184/4YV1Q0mR_400x400.jpg",
+        "name": "T3n",
+        "sourceId": "t3n",
+        "url": "http://t3n.de"
+    },
+    {
+        "id": 53923,
+        "country": "gb",
+        "description": "Tune in to the world's biggest sports radio station - Live Premier League football coverage, breaking sports news, transfer rumours &amp; exclusive interviews.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875645817381507074/zs6uOcf8_400x400.jpg",
+        "name": "TalkSport",
+        "sourceId": "talksport",
+        "url": "http://talksport.com"
+    },
+    {
+        "id": 53926,
+        "country": "us",
+        "description": "TechCrunch is a leading technology media property, dedicated to obsessively profiling startups, reviewing new Internet products, and breaking tech news.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/969240943671955456/mGuud28F_400x400.jpg",
+        "name": "TechCrunch",
+        "sourceId": "techcrunch",
+        "url": "https://techcrunch.com"
+    },
+    {
+        "id": 53951,
+        "country": "zh",
+        "description": "TechCrunch is a leading technology media property, dedicated to obsessively profiling startups, reviewing new Internet products, and breaking tech news.",
+        "language": "zh",
+        "logoUrl": "https://pbs.twimg.com/profile_images/969240943671955456/mGuud28F_400x400.jpg",
+        "name": "TechCrunch (CN)",
+        "sourceId": "techcrunch-cn",
+        "url": "https://techcrunch.cn"
+    },
+    {
+        "id": 53976,
+        "country": "us",
+        "description": "The latest technology news and reviews, covering computing, home entertainment systems, gadgets and more.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875421451653873664/P21KAcnr_400x400.jpg",
+        "name": "TechRadar",
+        "sourceId": "techradar",
+        "url": "http://www.techradar.com"
+    },
+    {
+        "id": 54013,
+        "country": "us",
+        "description": "Realism and reform. A new voice for a new generation of conservatives.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/668879829983326208/JXrxthUA_400x400.jpg",
+        "name": "The American Conservative",
+        "sourceId": "the-american-conservative",
+        "url": "http://www.theamericanconservative.com/"
+    },
+    {
+        "id": 54036,
+        "country": "gb",
+        "description": "The Economist offers authoritative insight and opinion on international news, politics, business, finance, science, technology and the connections between them.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/879361767914262528/HdRauDM-_400x400.jpg",
+        "name": "The Economist",
+        "sourceId": "the-economist",
+        "url": "http://www.economist.com"
+    },
+    {
+        "id": 54039,
+        "country": "ca",
+        "description": "The Globe and Mail offers the most authoritative news in Canada, featuring national and international news.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/742385672682512384/VfTAuqLg_400x400.jpg",
+        "name": "The Globe And Mail",
+        "sourceId": "the-globe-and-mail",
+        "url": "https://www.theglobeandmail.com"
+    },
+    {
+        "id": 54052,
+        "country": "au",
+        "description": "Latest news, sport, comment, analysis and reviews from Guardian Australia",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/952866338187423744/0hj7a-EH_400x400.jpg",
+        "name": "The Guardian (AU)",
+        "sourceId": "the-guardian-au",
+        "url": "https://www.theguardian.com/au"
+    },
+    {
+        "id": 54092,
+        "country": "gb",
+        "description": "Latest news, sport, business, comment, analysis and reviews from the Guardian, the world's leading liberal voice.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/952866338187423744/0hj7a-EH_400x400.jpg",
+        "name": "The Guardian (UK)",
+        "sourceId": "the-guardian-uk",
+        "url": "https://www.theguardian.com/uk"
+    },
+    {
+        "id": 54093,
+        "country": "us",
+        "description": "The Hill is a top US political website, read by the White House and more lawmakers than any other site -- vital for policy, politics and election campaigns.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/907330975587336193/tw7JPE5v_400x400.jpg",
+        "name": "The Hill",
+        "sourceId": "the-hill",
+        "url": "http://thehill.com"
+    },
+    {
+        "id": 54126,
+        "country": "in",
+        "description": "The Hindu. latest news, analysis, comment, in-depth coverage of politics, business, sport, environment, cinema and arts from India's national newspaper.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/2478394561/nb2te43f8bqf820e1gry_400x400.jpeg",
+        "name": "The Hindu",
+        "sourceId": "the-hindu",
+        "url": "http://www.thehindu.com"
+    },
+    {
+        "id": 54140,
+        "country": "us",
+        "description": "The Huffington Post is a politically liberal American online news aggregator and blog that has both localized and international editions founded by Arianna Huffington, Kenneth Lerer, Andrew Breitbart, and Jonah Peretti, featuring columnists.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/184402517/huffpo_400x400.jpg",
+        "name": "The Huffington Post",
+        "sourceId": "the-huffington-post",
+        "url": "http://www.huffingtonpost.com"
+    },
+    {
+        "id": 54175,
+        "country": "ie",
+        "description": "The Irish Times online. Latest news including sport, analysis, business, weather and more from the definitive brand of quality news in Ireland.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/2944517635/5492cf569e6b0b1a9326a7d388009b60_400x400.png",
+        "name": "The Irish Times",
+        "sourceId": "the-irish-times",
+        "url": "https://www.irishtimes.com"
+    },
+    {
+        "id": 54206,
+        "country": "is",
+        "description": "The Jerusalem Post is the leading online newspaper for English speaking Jewry since 1932, bringing news and updates from the Middle East and all over the Jewish world.",
+        "language": "en",
+        "name": "The Jerusalem Post",
+        "sourceId": "the-jerusalem-post",
+        "url": "https://www.jpost.com/"
+    },
+    {
+        "id": 54241,
+        "country": "us",
+        "description": "The New York Times: Find breaking news, multimedia, reviews & opinion on Washington, business, sports, movies, travel, books, jobs, education, real estate, cars & more at nytimes.com.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/905479981459013637/a6BbKh4k_400x400.jpg",
+        "name": "The New York Times",
+        "sourceId": "the-new-york-times",
+        "url": "http://www.nytimes.com"
+    },
+    {
+        "id": 54282,
+        "country": "us",
+        "description": "The Next Web is one of the world’s largest online publications that delivers an international perspective on the latest news about Internet technology, business and culture.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/848832036169273344/p5J8QMn7_400x400.jpg",
+        "name": "The Next Web",
+        "sourceId": "the-next-web",
+        "url": "http://thenextweb.com"
+    },
+    {
+        "id": 54303,
+        "country": "gb",
+        "description": "Latest news, business, sport, comment, lifestyle and culture from the Daily Telegraph and Sunday Telegraph newspapers and video from Telegraph TV.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/704632088541134848/ypoRmbv__400x400.jpg",
+        "name": "The Telegraph",
+        "sourceId": "the-telegraph",
+        "url": "http://www.telegraph.co.uk"
+    },
+    {
+        "id": 54338,
+        "country": "in",
+        "description": "Times of India brings the Latest News and Top Breaking headlines on Politics and Current Affairs in India and around the World, Sports, Business, Bollywood News and Entertainment, Science, Technology, Health and Fitness news, Cricket and opinions from leading columnists.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/651768664056696832/xht4j-S5_400x400.jpg",
+        "name": "The Times of India",
+        "sourceId": "the-times-of-india",
+        "url": "http://timesofindia.indiatimes.com"
+    },
+    {
+        "id": 54362,
+        "country": "us",
+        "description": "The Verge covers the intersection of technology, science, art, and culture.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/877903823133704194/Mqp1PXU8_400x400.jpg",
+        "name": "The Verge",
+        "sourceId": "the-verge",
+        "url": "http://www.theverge.com"
+    },
+    {
+        "id": 54393,
+        "country": "us",
+        "description": "WSJ online coverage of breaking news and current headlines from the US and around the world. Top stories, photos, videos, detailed analysis and in-depth reporting.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/971415515754266624/zCX0q9d5_400x400.jpg",
+        "name": "The Wall Street Journal",
+        "sourceId": "the-wall-street-journal",
+        "url": "http://www.wsj.com"
+    },
+    {
+        "id": 54434,
+        "country": "us",
+        "description": "Breaking news and analysis on politics, business, world national news, entertainment more. In-depth DC, Virginia, Maryland news coverage including traffic, weather, crime, education, restaurant reviews and more.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/875440182501277696/n-Ic9nBO_400x400.jpg",
+        "name": "The Washington Post",
+        "sourceId": "the-washington-post",
+        "url": "https://www.washingtonpost.com"
+    },
+    {
+        "id": 54459,
+        "country": "us",
+        "description": "The Washington Times delivers breaking news and commentary on the issues that affect the future of our nation.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/880048880292941826/99fsdFko_400x400.jpg",
+        "name": "The Washington Times",
+        "sourceId": "the-washington-times",
+        "url": "https://www.washingtontimes.com/"
+    },
+    {
+        "id": 54490,
+        "country": "us",
+        "description": "Breaking news and analysis from TIME.com. Politics, world news, photos, video, tech reviews, health, science and entertainment news.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/1700796190/Picture_24_400x400.png",
+        "name": "Time",
+        "sourceId": "time",
+        "url": "http://time.com"
+    },
+    {
+        "id": 54519,
+        "country": "us",
+        "description": "Get the latest national, international, and political news at USATODAY.com.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/924991591642796032/v90LrlR__400x400.jpg",
+        "name": "USA Today",
+        "sourceId": "usa-today",
+        "url": "http://www.usatoday.com/news"
+    },
+    {
+        "id": 54540,
+        "country": "us",
+        "description": "Vice News is Vice Media, Inc.'s current affairs channel, producing daily documentary essays and video through its website and YouTube channel. It promotes itself on its coverage of \"under - reported stories\".",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/785208513177985024/Guc3ohmz_400x400.jpg",
+        "name": "Vice News",
+        "sourceId": "vice-news",
+        "url": "https://news.vice.com"
+    },
+    {
+        "id": 54581,
+        "country": "us",
+        "description": "Wired is a monthly American magazine, published in print and online editions, that focuses on how emerging technologies affect culture, the economy, and politics.",
+        "language": "en",
+        "logoUrl": "https://pbs.twimg.com/profile_images/615598832726970372/jsK-gBSt_400x400.png",
+        "name": "Wired",
+        "sourceId": "wired",
+        "url": "https://www.wired.com"
+    },
+    {
+        "id": 54616,
+        "country": "de",
+        "description": "Wired reports on how emerging technologies affect culture, the economy and politics.",
+        "language": "de",
+        "logoUrl": "https://pbs.twimg.com/profile_images/615598832726970372/jsK-gBSt_400x400.png",
+        "name": "Wired.de",
+        "sourceId": "wired-de",
+        "url": "https://www.wired.de"
+    },
+    {
+        "id": 54625,
+        "country": "de",
+        "description": "Das Online-Portal des führenden Wirtschaftsmagazins in Deutschland. Das Entscheidende zu Unternehmen, Finanzen, Erfolg und Technik.",
+        "language": "de",
+        "logoUrl": "https://pbs.twimg.com/profile_images/596378323128836096/23C3DVmy_400x400.jpg",
+        "name": "Wirtschafts Woche",
+        "sourceId": "wirtschafts-woche",
+        "url": "http://www.wiwo.de"
+    },
+    {
+        "id": 54646,
+        "country": "zh",
+        "description": "中国主要重点新闻网站,依托新华社遍布全球的采编网络,记者遍布世界100多个国家和地区,地方频道分布全国31个省市自治区,每天24小时同时使用6种语言滚动发稿,权威、准确、及时播发国内外重要新闻和重大突发事件,受众覆盖200多个国家和地区,发展论坛是全球知名的中文论坛。",
+        "language": "zh",
+        "logoUrl": "https://pbs.twimg.com/profile_images/417488690714120192/_i50eUX3_400x400.jpeg",
+        "name": "Xinhua Net",
+        "sourceId": "xinhua-net",
+        "url": "http://xinhuanet.com/"
+    },
+    {
+        "id": 54649,
+        "country": "is",
+        "description": "ynet דף הבית: אתר החדשות המוביל בישראל מבית ידיעות אחרונות. סיקור מלא של חדשות מישראל והעולם, ספורט, כלכלה, תרבות, אוכל, מדע וטבע, כל מה שקורה וכל מה שמעניין ב ynet.",
+        "language": "he",
+        "logoUrl": "https://pbs.twimg.com/profile_images/1679844840/logo_400x400.jpg",
+        "name": "Ynet",
+        "sourceId": "ynet",
+        "url": "http://www.ynet.co.il"
+    }
+]

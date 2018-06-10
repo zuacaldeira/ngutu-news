@@ -1,0 +1,30 @@
+[
+    {
+        "id": 50044,
+        "tag": "general"
+    },
+    {
+        "id": 52403,
+        "tag": "sports"
+    },
+    {
+        "id": 50499,
+        "tag": "business"
+    },
+    {
+        "id": 50533,
+        "tag": "technology"
+    },
+    {
+        "id": 52590,
+        "tag": "entertainment"
+    },
+    {
+        "id": 53357,
+        "tag": "health"
+    },
+    {
+        "id": 53484,
+        "tag": "science"
+    }
+]

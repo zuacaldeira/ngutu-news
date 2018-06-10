@@ -5,21 +5,6 @@
     padding: 0;
 }
 
-/* BODY */
-html, .container, .container-fluid {
-    margin: 0;
-    padding: 0;    
-}
-
-body {
-    font-family: 'Dosis';
-    font-size: 16px;
-    letter-spacing: .1em;
-    color: black;
-    background: #eee;
-    min-height: 100vh;
-}
-
 .clearer
 {
     clear: both;
@@ -34,288 +19,160 @@ body {
     display: block;
 }
 
-/* HEADER */
+/* 1 - BODY */
+body {
+    font-family: 'Dosis';
+    font-size: 16px;
+    letter-spacing: .1em;
+    color: black;
+    background: #fff;
+    min-height: 100vh;
+}
+
+
+/* 1.1 - HEADER */
 header {
-    width: 100%;
-    height: 5vh;
-    padding: 0;
-    margin: 0;
-}
-
-nav.navbar {
-    border: none;
-    border-radius: 0;
-    padding: 0;
-    margin: 0;
-}
-
-nav.navbar ul li ul {
-    background: black;
-    border: 1px solid yellow;    
-}
-nav.navbar li, header nav.navbar li a {
-    color: yellow;
-}
-
-header nav.navbar li a:hover {
-    color: black;
-    background: yellow;
-}
-
-body > header > nav > div.navbar-header > button {
-    margin-right: 0;
-}
-
-.scrollable-menu {
-    height: auto;
-    max-height: 400px;
-    overflow-x: hidden;
-}
-
-.jumbotron {
-    height: 50vh;
-    margin: 0;
-    padding: 0;
-    background-image: url(https://source.unsplash.com/random?news);
-    background-repeat:  no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 0;
-}
-
-.jumbotron .container {
-    width: 100%;
-    height: 50vh;
-    background: rgba(0,0,0,.5);
-    margin: 0;
-    padding: 0;
-    border-radius: 0;
-}
-
-.jumbotron .message {
-    width: 100%;
-    padding: 7.5vh 0;
-    height: auto;
-    color: white;
-    text-align: justify;
-}
-
-body > main > div.jumbotron > div > div.col-sm-10.col-md-8.col-lg-6 {
-    background: rgba(0,0,0,.25);
-    padding-bottom: 2em;
-}
-
-.jumbotron form {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.jumbotron form input[type="text"]{
-    background: transparent;
-    color: white;
-}
-
-.jumbotron form button[type="submit"]{
-    background: yellow;
-    color: black;
-}
-
-.jumbotron .message  h1 {
-    font-size: 1.75em;
-}
-
-.jumbotron .message p {
-    padding-bottom: 1em;
-    font-size: 1em;
-}
-
-
-.jumbotron .message ul {
-    list-style: none;
-    padding-bottom: 1em;
-}
-
-.jumbotron .message ul li {
-    color: white;
-    background: transparent;
-    display: inline;
-}
-
-
-/* MAIN CONTENT */
-
-main {
-    width: 100%;
-    min-height: 55vh;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.summaries-context {
-    width: calc(100%-1em);
-    margin: 0;
-    padding: .5em;
-    background: black;
-    color: yellow;
-}
-.summaries-context .title {
-    text-align: left;
-    margin: 0;
-    padding-left: 1em;
-    display: inline;
-    float: left;
-}
-
-.summaries-context .actions {
-    text-align: right;
-    margin: 0;
-    padding-right: 1em;
-    display: inline;
-    float:right;
-}
-
-.glyphicon-th, .glyphicon-th-list {
-    color: gray;
-}
-
-.glyphicon-th:hover, .glyphicon-th-list:hover,
-.glyphicon-th:active, .glyphicon-th-list:active,
-.glyphicon-th.active, .glyphicon-th-list.active {
-    color: yellow;
-}
-
-.summaries {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    padding: 1em;
     background: #eee;
 }
 
-.summary {
+nav {
+    background: #000;
     width: 100%;
+    height: 3em;
+    display: inline-block;
+}
+
+#navbar {
+    width: 100%;
+    overflow: hidden;
+}
+
+#navbar a {
+    float: left;
+    text-align: center;
+    padding: 1em;
+}
+
+#jumbotron {
+    height: 50vh;
     position: relative;
-    vertical-align: top;
-    float: left;
-    margin-bottom: 1em;
-    box-shadow: 0px 1px 20px 0px #fff;
-    overflow: scroll;
-    background: white;
 }
 
-.summary.grid {
-    height: 28em;
+#jumbotron #teaser {
+    position: absolute;
+    bottom: 2.5em;
+    width: 50%;
+    margin: 0 25%;
+    padding: 1em;
+    font-weight: normal;
+    border-radius: .5em;
+    background: rgba(0,0,0,.5);
 }
 
-.summary.list {
-    height: 16em;
+#jumbotron #teaser h2,
+#jumbotron #teaser h3 {
+    color: rgba(255,255,0,.75);
+    font-weight: normal;
 }
 
-.summary .news-copyright {
-    width:100%;
-    height: 3em;
-    padding: 0;
-    margin: 0em;
-    background: linear-gradient(to right, #234, white);
+#jumbotron #teaser p {
+    color: #ccc;
+    font-weight: normal;
 }
 
-
-.summary .news-source .source-image {
-    width: 3em;
-    height: 3em;
-    padding: 0;
-    margin: 0em;
-    display: inline;
-    float: left;
-}
-
-.summary .news-source .source-name {
-    height: 3em;
-    line-height: 3em;
-    padding: 0em .2em 0 .5em;
-    margin: 0em;
-    display: inline;
-    font-weight: bold;
-    float: left;
-}
-
-.summary .news-source .publish-date {
-    height: 3em;
-    line-height: 3em;
-    padding: .6em .5em 0 .2em;
-    margin: 0em;
-    float: right;
-    color: #777;
-    font-size: 0.75em;
-}
-
-.summary.grid .news-image {
+#jumbotron #teaser #search-form {
     width: 100%;
-    height: 10em;
+    height: 3.5em;
+    border: 0;
 }
 
-.summary.list .news-image {
-    width: 33%;
-    height: 10em;
-    margin-right: 1em;
-    float:left;
-}
-
-.summary.grid  .news-title {
+#jumbotron #teaser #search-form #form-group {
     width: 100%;
-    height: auto;
-    padding: .5em;
-    margin: 0;
-    text-align: left;
-}
-
-.summary.list .news-title {
-    text-align: left;
-}
-
-.summary.grid .news-title a {
-    text-decoration: none;
-}
-
-.summary.grid .news-description {
-    height: auto;
-    color: #777;
-    font-size: .75em;
-    text-align: left;
-    padding: .5em;
-    margin: 0;
-}
-.summary.list .news-description {
-    text-align: left;
-    padding-top: 1em;
-    color: #777;
-    font-size: .75em;
-}
-
-.summary a {
-    text-decoration: none;
+    height: 3em;
 }
 
 
-footer {
-    padding: 0;
-    margin: 0;
+#jumbotron #teaser #search-form #search-input {
+    width: 80%;
+    height: 3em;
+    border: 0;
 }
 
-footer.navbar-inverse {
-    border-radius: 0%;
-    margin: 0;
-}
-
-footer ul {
-    width: 100%;
-    padding: 0em;
-    margin: 0;
-}
-
-footer ul li {
+#jumbotron #teaser #search-form #search-button {
+    width: auto;
+    height: 3em;
+    border: none;
+    margin-top: 1em;
     padding: 0 1em;
+    background-color: yellow; 
+}
+
+/* 1.2 - MAIN */
+main {
+    background: #111;
+    width: 100%;
+    min-height: 50vh;
+}
+
+main #content-menu {
+    width: 100%;
+    height: 2.5em;
+    background: yellow;
+}
+
+main #content-menu #breadcrumb,
+main #content-menu #content-actions {
+    padding: .5em;
+}
+
+main #content-menu #breadcrumb {
+    max-width: 50%;
+    float: left;
+    font-size: 1em;    
+}
+main #content-menu #breadcrumb ul{
+    width: 100%;
+    float: left;
+}
+
+main #content-menu #content-actions {
+    min-width: 50%;
+    float: right;
+}
+
+main #content-menu #content-actions ul {
+    list-style: none;
+    float: right;
+}
+
+main #content-menu #content-actions ul li {
+    display: inline;
+}
+
+main #content-menu a {
+    color: #777;
+    font-weight: bold;
+}
+
+
+/* SUMMARIES */
+
+
+/* 1.3 - FOOTER */
+footer {
+    background: #ccc;
+}
+
+footer nav {
+    width: 100%;
+}
+
+
+
+/*
+Other
+*/
+
+.circle {
+    border-radius: 50%;
 }

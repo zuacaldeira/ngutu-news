@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Ngutu News</title>
+        <link rel="stylesheet"  href="css/style.css" type="text/css">
+        <link rel="stylesheet"  href="css/dropdown.css" type="text/css">
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header>
+            <!-- TOP NAVIGATION  -->
+            <nav id="navbar" class="navbar clearfix">
+                <a id="brand" href="#">news.ngutu.org</a>
+                <a href="#" class="active">Home</a>
+                <a href="#">Latest</a>
+                <div class="dropdown categories">
+                    <a href="#">Categories
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content"></div>
+                </div>
+                <div class="dropdown publishers">
+                    <a href="#">Publishers
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content"></div>
+                </div>
+                <div class="dropdown languages">
+                    <a href="#">Languages
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content"></div>
+                </div>
+                <div class="dropdown countries">
+                    <a href="#">Countries
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div class="dropdown-content"></div>
+                </div>
+            </nav>
+            
+            <div id="jumbotron">
+                <div id="teaser">
+                    <h3 id="teaser-title">What's Going On?</h3>
+                    <p id="teaser-subtitle">
+                        news.ngutu.org bring news around the World, 
+                        for improved awareness of global trends and challenges,
+                        in an effective and productive way
+                    </p>
+                    <form id="search-form">
+                        <div id="form-group">
+                            <input id="search-input" name="search" type="text" required>
+                            <button id="search-button" type="submit">
+                                <i>SEARCH</i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <div id="content-menu">
+                <div id="breadcrumb">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="content-actions">
+                    <ul>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">Grid</a>
+                        </li>
+                        <li>
+                            <a href="#">Lists</a>
+                        </li>
+                        <li>
+                            <a href="#">Maps</a>
+                        </li>
+                        <li>
+                            <a href="#">Timeline</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+            
+            <div id="content" class="clearfix">
+                <div id="summaries" class="clearfix"></div>
+            </div>
+            
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <nav id="footer-menu">
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">privacy</a></li>
+                    <li><a href="#">impressum</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- START: DEVELOPMENT ONLY -->
+        <script src="js/conformance-check.js"></script>
+        <script src="js/style-check.js"></script>
+        <!-- END: DEVELOPMENT ONLY -->
+        <script src="js/ngutu-news.js"></script>
+    </body>
+
+</html>
